@@ -13,6 +13,6 @@ import org.springframework.stereotype.Repository;
  * @author ducan
  */
 @Repository
-public interface AdminRepository extends JpaRepository<Admin, Integer>{
+public interface AdminRepository extends JpaRepository<Admin, Long>{
     
 }

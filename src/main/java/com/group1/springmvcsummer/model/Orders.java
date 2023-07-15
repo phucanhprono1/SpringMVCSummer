@@ -29,7 +29,7 @@ public class Orders {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer orderId;
+	private Long orderId;
 
 	private LocalDateTime date;
 	private String orderStatus;
@@ -45,6 +45,6 @@ public class Orders {
 	private User user;
 
 	@OneToMany(cascade = CascadeType.ALL)
-	private List<CartItem> cartItems ;
+	private List<OrderItem> orderItems = new ArrayList<>() ;
 
 }

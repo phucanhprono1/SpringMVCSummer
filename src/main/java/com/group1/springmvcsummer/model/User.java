@@ -19,7 +19,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, name = "id")
-    private Integer id;
+    private Long id;
     @Column(unique = true, name = "email")
     public String email;
     @Column(name = "password")
@@ -28,4 +28,6 @@ public class User {
     private String gender;
     @Column(unique = true, name = "username")
     private String username;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Cart cart;
 }

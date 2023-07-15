@@ -23,7 +23,7 @@ public class Admin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer adminId;
+    private Long adminId;
     private String name;
     private String email;
     private String password;

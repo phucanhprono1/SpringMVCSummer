@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8"/>
     <title>Spring MVC Example</title>
 </head>
 <body>

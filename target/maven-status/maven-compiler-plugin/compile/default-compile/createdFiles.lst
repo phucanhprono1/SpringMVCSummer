@@ -1,2 +1,5 @@
+com\group1\springmvcsummer\model\User.class
+com\group1\springmvcsummer\model\Category.class
 com\group1\springmvcsummer\config\AppConfiguration.class
+com\group1\springmvcsummer\model\Item.class
 com\group1\springmvcsummer\controller\HomeController.class

@@ -15,11 +15,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-    @GetMapping("/home")
-    public String homePage(Model model) {
-        model.addAttribute("title", "Hello Thymeleaf");
-        model.addAttribute("message", "Welcome to Thymeleaf!");
-
+    @GetMapping("/")
+    public String home(Model model) {
+        model.addAttribute("message", "Xin chào từ Controller!");
         return "home";
     }
 }

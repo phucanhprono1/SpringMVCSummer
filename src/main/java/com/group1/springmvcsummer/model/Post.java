@@ -4,17 +4,32 @@
  */
 package com.group1.springmvcsummer.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import java.time.LocalDateTime;
+import javax.persistence.*;
 import lombok.Data;
 
 /**
  *
  * @author ducan
  */
-@Data
 @Entity
-@Table
+@Table(name = "tbl_posts")
+@Data
 public class Post {
-    
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "admin_id")
+    private Admin admin;
+    @Column(name = "content")
+    private String content;
+    @Column(name = "image_url")
+    private String imageUrl;
+
+    @Column(name = "post_date")
+    private LocalDateTime postDate;
+
+    // Các getter và setter khác
 }

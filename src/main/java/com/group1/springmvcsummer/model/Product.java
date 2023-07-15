@@ -4,7 +4,6 @@
  */
 package com.group1.springmvcsummer.model;
 
-import java.io.Serializable;
 import javax.persistence.*;
 import lombok.*;
 import java.util.List;
@@ -18,7 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "tbl_product")
-public class Item implements Serializable {
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,11 +33,16 @@ public class Item implements Serializable {
     private String manufacturer;
     private int quantity;
     private int numberSell;
+    
     @ManyToOne
     @JoinColumn(name = "category_id")
-    private Category cate;
+    private Category category;
+    
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private List<Comment> listComment;
-    private Integer rating;
+    
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "supplier_id")
+    private Supplier supplier;
 }

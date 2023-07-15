@@ -4,10 +4,28 @@
  */
 package com.group1.springmvcsummer.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import lombok.Data;
+
 /**
  *
  * @author ducan
  */
+
+@Data
+@Entity
+@Table(name = "tbl_admin")
 public class Admin {
-    
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer adminId;
+    private String name;
+    private String email;
+    private String password;
+
 }

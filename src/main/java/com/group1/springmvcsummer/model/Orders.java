@@ -15,6 +15,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import lombok.Data;
 
@@ -36,6 +37,9 @@ public class Orders {
 	private String location;
 	@Column(name="total_price")
 	private float total_price;
+        
+        @OneToOne
+        private Discount discount;
 
 	private String paymentMethod;
 	private String paymentStatus;

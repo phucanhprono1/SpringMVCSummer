@@ -23,16 +23,15 @@ public class ProductHistory {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private Product product;
-    @OneToOne
-    @JoinColumn(name = "admin_id", nullable = false)
-    private Admin admin;
+//    @OneToOne
+//    @JoinColumn(name = "admin_id", nullable = false)
+//    private Admin admin;
 
     @Column(name = "change_time")
     private LocalDateTime changeTime;
 
-    public ProductHistory(Product product,Admin admin) {
+    public ProductHistory(Product product) {
         this.product = product;
-        this.admin = admin;
         this.changeTime = LocalDateTime.now();
     }
 }

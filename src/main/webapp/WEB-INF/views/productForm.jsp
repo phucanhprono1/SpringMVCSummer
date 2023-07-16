@@ -41,8 +41,6 @@
             <label for="numberSell">Number Sold:</label>
             <input type="number" name="numberSell" id="numberSell" required><br>
 
-            <label for="adminId">Admin ID:</label>
-            <input type="text" name="adminId" id="adminId" required><br>
 
             <button type="submit">Save</button>
         </form>

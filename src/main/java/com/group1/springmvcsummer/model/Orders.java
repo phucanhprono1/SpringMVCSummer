@@ -29,7 +29,7 @@ public class Orders {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long orderId;
+	private Long id;
 
 	private LocalDateTime date;
 	private String orderStatus;

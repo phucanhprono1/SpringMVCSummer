@@ -10,11 +10,13 @@ com\group1\springmvcsummer\model\OrderItem.class
 com\group1\springmvcsummer\repository\ProductRepository.class
 com\group1\springmvcsummer\model\Category.class
 com\group1\springmvcsummer\model\Comment.class
+com\group1\springmvcsummer\repository\ProductHistoryRepository.class
 com\group1\springmvcsummer\model\Orders.class
 com\group1\springmvcsummer\model\User.class
 com\group1\springmvcsummer\model\Discount.class
 com\group1\springmvcsummer\service\ProductService.class
 com\group1\springmvcsummer\config\AppConfiguration.class
+com\group1\springmvcsummer\controller\ProductController.class
 com\group1\springmvcsummer\model\Cart.class
 com\group1\springmvcsummer\repository\AdminRepository.class
 com\group1\springmvcsummer\service\AdminService.class

@@ -29,7 +29,7 @@ public class Cart {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "cart_id")
-	private Long cartId;
+	private Long id;
 	private Integer product_quantity;
 	private float total_price;
 	@OneToMany( cascade = CascadeType.ALL)

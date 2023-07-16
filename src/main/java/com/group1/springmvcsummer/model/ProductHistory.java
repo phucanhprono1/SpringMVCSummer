@@ -20,32 +20,19 @@ public class ProductHistory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @Column(unique = true)
-    private String name;
-    private float price;
-    private String color;
-    private String description;
-    private String image;
-    private String size;
-    private String manufacturer;
-    private int quantity;
-    private int numberSell;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "product_id")
+    private Product product;
+    @OneToOne
+    @JoinColumn(name = "admin_id", nullable = false)
+    private Admin admin;
 
     @Column(name = "change_time")
     private LocalDateTime changeTime;
 
-
-    public ProductHistory(Product product) {
-        this.name = product.getName();
-        this.price = product.getPrice();
-        this.color = product.getColor();
-        this.description = product.getDescription();
-        this.image = product.getImage();
-        this.size = product.getSize();
-        this.manufacturer = product.getManufacturer();
-        this.quantity = product.getQuantity();
-        this.numberSell = product.getNumberSell();
+    public ProductHistory(Product product,Admin admin) {
+        this.product = product;
+        this.admin = admin;
         this.changeTime = LocalDateTime.now();
     }
 }

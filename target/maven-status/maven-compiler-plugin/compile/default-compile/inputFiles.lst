@@ -6,12 +6,14 @@ D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Post.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Supplier.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\AdminService.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\ProductService.java
+D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\ProductHistoryRepository.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\ProductRepository.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\AdminRepository.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\ProductHistory.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Cart.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\controller\HomeController.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\CartItemRepository.java
+D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\controller\ProductController.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\User.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\CartItem.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\config\AppConfiguration.java

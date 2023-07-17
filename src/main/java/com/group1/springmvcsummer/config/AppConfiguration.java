@@ -48,7 +48,7 @@ public class AppConfiguration implements ApplicationContextAware {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        dataSource.setUrl("jdbc:sqlserver://DESKTOP-37B40B4:1433;databaseName=mydb");
+        dataSource.setUrl("jdbc:sqlserver://localhost:1433;databaseName=mydb");
         dataSource.setUsername("sa");
         dataSource.setPassword("sa");
         return dataSource;

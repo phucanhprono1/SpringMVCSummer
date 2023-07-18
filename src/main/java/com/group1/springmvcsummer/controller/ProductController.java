@@ -10,8 +10,10 @@ import com.group1.springmvcsummer.model.ProductHistory;
 import com.group1.springmvcsummer.repository.AdminRepository;
 import com.group1.springmvcsummer.repository.ProductHistoryRepository;
 import com.group1.springmvcsummer.repository.ProductRepository;
+import com.group1.springmvcsummer.service.ProductService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,13 +30,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("admin/")
 public class ProductController {
 
-    private final ProductRepository productRepository;
-    private final ProductHistoryRepository productHistoryRepository;
-    private final AdminRepository adminRepository;
+    @Autowired
+    private ProductService productService;
 
     @GetMapping("/form")
     public String showProductForm(Model model) {
-        model.addAttribute("product", new Product());
+        // Kiểm tra xem có sản phẩm đã tồn tại hay không
+        Product product = productService.findProductById(productId);
+        if (product == null) {
+            product = new Product(); // Tạo mới sản phẩm nếu chưa tồn tại
+        }
+
+        model.addAttribute("product", product);
         return "productForm";
     }
     @GetMapping("/list")

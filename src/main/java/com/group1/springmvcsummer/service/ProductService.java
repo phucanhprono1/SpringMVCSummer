@@ -21,5 +21,11 @@ import org.springframework.stereotype.Service;
 public class ProductService {
 
     private final ProductRepository productRepository;
-    private final ProductHistoryRepository productHistoryRepository;
+    
+    public Product saveProduct(Product product){
+        return productRepository.save(product);
+    }
+    public Product findProductById(Long Id){
+        return productRepository.findById(Id);
+    }
 }

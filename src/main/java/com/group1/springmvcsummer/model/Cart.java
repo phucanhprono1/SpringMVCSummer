@@ -15,7 +15,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
@@ -24,6 +27,8 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name="tbl_cart")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Cart {
 
 	@Id

@@ -15,6 +15,8 @@ import lombok.*;
 @Entity
 @Table(name = "tbl_product_history")
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ProductHistory {
 
     @Id

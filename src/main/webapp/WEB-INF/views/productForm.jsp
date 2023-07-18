@@ -6,6 +6,8 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -13,34 +15,16 @@
     </head>
     <body>
         <h1>Add or Update Product</h1>
-        <form action="${pageContext.request.contextPath}/product/addOrUpdate" method="POST">
+        <form action="${pageContext.request.contextPath}/products/save" method="post">
+            <input type="hidden" name="id" value="${product.id}" />
+
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required><br>
+            <input type="text" name="name" value="${product.name}" />
 
-            <label for="price">Price:</label>
-            <input type="number" name="price" id="price" required><br>
-
-            <label for="color">Color:</label>
-            <input type="text" name="color" id="color" required><br>
-
-            <label for="description">Description:</label>
-            <textarea name="description" id="description" rows="4" cols="50"></textarea><br>
-
-            <label for="image">Image:</label>
-            <input type="text" name="image" id="image" required><br>
-
-            <label for="size">Size:</label>
-            <input type="text" name="size" id="size" required><br>
-
-            <label for="manufacturer">Manufacturer:</label>
-            <input type="text" name="manufacturer" id="manufacturer" required><br>
+            <!-- Các trường thông tin khác -->
 
             <label for="quantity">Quantity:</label>
-            <input type="number" name="quantity" id="quantity" required><br>
-
-            <label for="numberSell">Number Sold:</label>
-            <input type="number" name="numberSell" id="numberSell" required><br>
-
+            <input type="number" name="quantity" value="${product.quantity}" />
 
             <button type="submit">Save</button>
         </form>

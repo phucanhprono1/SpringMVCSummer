@@ -17,7 +17,7 @@
         }
 
         .quantity {
-            gravity:center;
+            text-align: center;
         }
 
         .actions {
@@ -52,6 +52,36 @@
             });
         }
     </script>
+    <script>
+        function removeItem(cartItemId) {
+            $.ajax({
+                type: "PUT",
+                url: "/cart/remove/${cart.user.id}/${cartItemId}",
+                success: function (data) {
+                    $("#cart-item-" + cartItemId).remove();
+                    $("#total-price").text(data.total_price);
+                },
+                error: function () {
+                    alert("Failed to remove item from cart.");
+                }
+            });
+        }
+
+        function removeAllItems() {
+            $.ajax({
+                type: "DELETE",
+                url: "/cart/removeAll/${cart.user.id}",
+                success: function () {
+                    location.reload();
+                },
+                error: function () {
+                    alert("Failed to remove all items from cart.");
+                }
+            });
+        }
+       
+    });
+    </script>
 </head>
 <body>
     <h1>Cart</h1>
@@ -63,20 +93,21 @@
             <th>Actions</th>
         </tr>
         <c:forEach items="${cart.cartItems}" var="item">
-            <tr>
+            <tr id="cart-item-${item.id}">
                 <td>${item.product.name}</td>
                 <td class="cart-item">
-                    
                     <div class="actions">
                         <button onclick="increaseQuantity(${item.id})">+</button>
-                        <span class="quantity">{item.quantity}</span>
+                        <span class="quantity">${item.quantity}</span>
                         <button onclick="decreaseQuantity(${item.id})">-</button>
                     </div>
                 </td>
                 <td>${item.product.price}</td>
+                <td><button onclick="removeItem(${item.id})">Remove</button></td>
             </tr>
         </c:forEach>
     </table>
-    <p>Total Price: ${cart.totalPrice}</p>
+    <p>Total Price: <span id="total-price">${cart.total_price}</span></p>
+    <button onclick="removeAllItems()">Remove All</button>
 </body>
 </html>

@@ -6,6 +6,7 @@ package com.group1.springmvcsummer.controller;
 
 import com.group1.springmvcsummer.model.Cart;
 import com.group1.springmvcsummer.model.User;
+import com.group1.springmvcsummer.repository.CartRepository;
 import com.group1.springmvcsummer.repository.UserRepository;
 import com.group1.springmvcsummer.service.CartService;
 import java.util.function.Supplier;
@@ -28,12 +29,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CartController {
 
     private final CartService cartService;
-    private final UserRepository userRepository;
+    private final CartRepository cartRepository;
 
     @Autowired
-    public CartController(CartService cartService, UserRepository userRepository) {
+    public CartController(CartService cartService, CartRepository cartRepository) {
         this.cartService = cartService;
-        this.userRepository = userRepository;
+        this.cartRepository = cartRepository;
     }
 
     @GetMapping("/view/{customerId}")
@@ -41,13 +42,10 @@ public class CartController {
             @PathVariable(value = "customerId") Long customerId,
             Model model
     ) throws Exception {
-        User customer = userRepository.findById(customerId).orElseThrow(new Supplier<Exception>() {
-            @Override
-            public Exception get() {
-                return new Exception("Customer not found!");
-            }
-        });
-        Cart cart = customer.getCart();
+        Cart cart;
+        cart = cartRepository.findByUserId(customerId);
+        
+
         model.addAttribute("cart", cart);
         return "cart";
     }

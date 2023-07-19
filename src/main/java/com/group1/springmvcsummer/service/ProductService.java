@@ -4,11 +4,9 @@
  */
 package com.group1.springmvcsummer.service;
 
-import com.group1.springmvcsummer.model.Admin;
 import com.group1.springmvcsummer.model.Product;
-import com.group1.springmvcsummer.model.ProductHistory;
-import com.group1.springmvcsummer.repository.ProductHistoryRepository;
 import com.group1.springmvcsummer.repository.ProductRepository;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -27,5 +25,13 @@ public class ProductService {
     }
     public Product findProductById(Long Id){
         return productRepository.findById(Id);
+    }
+    
+    public List<Product> getAllProduct(){
+        return productRepository.findAll();
+    }
+
+    public Product findProductByName(String name) {
+        return productRepository.findByName(name);
     }
 }

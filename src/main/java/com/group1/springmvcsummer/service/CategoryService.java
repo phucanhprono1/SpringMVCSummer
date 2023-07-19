@@ -4,10 +4,15 @@
  */
 package com.group1.springmvcsummer.service;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
 /**
  *
  * @author ducan
  */
+@Service
+@RequiredArgsConstructor
 public class CategoryService {
     
 }

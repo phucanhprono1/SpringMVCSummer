@@ -5,38 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a14e670-5131-4719-9d38-4723aa974b3c" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/repository/DiscountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/repository/SupplierRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/ProductHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/ProductHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/CategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/productList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/productList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/SupplierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/SupplierService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="minikube" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,7 +72,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.91">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,17 +84,106 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 8.5.91" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.91" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="32be90fc-3421-42ab-aad1-787a9c2d091f" />
+        <option name="BASE_DIRECTORY_NAME" value="ea2f1889-4649-4124-9505-2b489769cab6" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53977" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="32be90fc-3421-42ab-aad1-787a9c2d091f" />
+        <option name="HTTP_PORT" value="8080" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="62073" />
       </RunnerSettings>
@@ -158,6 +251,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="aws.lambda" factoryName="Local">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="debugHost" value="localhost" />
+      <option name="architecture" />
+      <option name="environmentVariables">
+        <map />
+      </option>
+      <option name="handler" />
+      <option name="image" value="false" />
+      <option name="logicalFunctionName" />
+      <option name="memorySize" value="128" />
+      <option name="pathMappings">
+        <list />
+      </option>
+      <option name="platform" />
+      <option name="runtime" />
+      <option name="templateFile" />
+      <option name="timeout" value="300" />
+      <option name="useTemplate" value="false" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <sam>
+        <option name="additionalBuildArgs" />
+        <option name="additionalLocalArgs" />
+        <option name="buildInContainer" value="false" />
+        <option name="dockerNetwork" />
+        <option name="skipImagePull" value="false" />
+      </sam>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 9.0.78" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.91" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -173,6 +301,8 @@
       <workItem from="1689473658580" duration="1818000" />
       <workItem from="1689688221712" duration="592000" />
       <workItem from="1689691719620" duration="750000" />
+      <workItem from="1689775067038" duration="210000" />
+      <workItem from="1689775303899" duration="2195000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

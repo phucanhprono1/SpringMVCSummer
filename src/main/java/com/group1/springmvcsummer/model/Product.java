@@ -30,7 +30,7 @@ public class Product {
     private String description;
     private String image;
     private String size;
-    private String manufacturer;
+    private String brand;
     private int quantity;
     private int numberSell;
     

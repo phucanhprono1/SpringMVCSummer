@@ -24,7 +24,7 @@
     <!-- ADD PERSISTENCE SUPPORT HERE (jpa, hibernate, etc) -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
-        <property name="url" value="jdbc:sqlserver://DESKTOP-37B40B4:1433;databaseName=mydb" />
+        <property name="url" value="jdbc:sqlserver://DESKTOP-TFDE4F9:1433;databaseName=mydb" />
         <property name="username" value="sa" />
         <property name="password" value="sa" />
     </bean>

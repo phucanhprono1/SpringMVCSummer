@@ -28,6 +28,6 @@ public class Supplier {
     @Column(name = "address")
     private String address;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Product> products;
+//    @OneToMany(cascade = CascadeType.ALL)
+//    private List<Product> products;
 }

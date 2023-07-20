@@ -18,6 +18,7 @@ D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Product.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\CategoryService.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Supplier.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\DiscountService.java
+D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\controller\CategoryController.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\DiscountRepository.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\ProductHistoryRepository.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\ProductRepository.java

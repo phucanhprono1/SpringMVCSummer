@@ -15,6 +15,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AdminRepository extends JpaRepository<Admin, Long>{
 
-    public Object findById(Long adminId);
+    public Admin findById(Long adminId);
     
 }

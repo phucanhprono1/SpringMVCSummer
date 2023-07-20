@@ -4,6 +4,7 @@ com\group1\springmvcsummer\model\ProductHistory.class
 com\group1\springmvcsummer\service\DiscountService.class
 com\group1\springmvcsummer\repository\CartItemRepository.class
 com\group1\springmvcsummer\model\Product.class
+com\group1\springmvcsummer\controller\SupplierController.class
 com\group1\springmvcsummer\model\OrderItem.class
 com\group1\springmvcsummer\repository\ProductRepository.class
 com\group1\springmvcsummer\model\Comment.class

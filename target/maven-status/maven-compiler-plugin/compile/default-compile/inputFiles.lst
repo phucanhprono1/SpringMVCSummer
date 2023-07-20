@@ -4,6 +4,7 @@ D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Category.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\SupplierRepository.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Post.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\AdminService.java
+D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\controller\SupplierController.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\CategoryRepository.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\ProductService.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Cart.java

@@ -20,7 +20,7 @@ public interface CategoryRepository extends JpaRepository<Category, Long>{
 
     public void deleteById(Long id);
 
-    public Object findById(Long id);
+    public Category findById(Long id);
     @Query("SELECT c FROM Category c WHERE LOWER(c.name) LIKE LOWER(CONCAT('%', :name, '%'))")
     List<Category> findByNameContainingIgnoreCase(@Param("name")String name);
     

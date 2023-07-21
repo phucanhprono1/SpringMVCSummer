@@ -33,6 +33,4 @@ public class User {
     private String gender;
     @Column(unique = true, name = "username")
     private String username;
-    @OneToOne(cascade = CascadeType.ALL)
-    private Cart cart;
 }

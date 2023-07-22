@@ -13,6 +13,8 @@ import java.util.List;
  * @author ducan
  */
 @Data
+@Getter
+@Setter
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -30,6 +32,7 @@ public class Product {
     private String description;
     private String image;
     private String size;
+    private String gender;
     private String brand;
     private int quantity;
     private int numberSell;
@@ -42,7 +45,9 @@ public class Product {
     @JoinColumn(name = "product_id")
     private List<Comment> listComment;
     
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "supplier_id")
     private Supplier supplier;
+
+   
 }

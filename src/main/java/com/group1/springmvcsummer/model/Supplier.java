@@ -15,6 +15,8 @@ import lombok.*;
 @Entity
 @Table(name = "tbl_suppliers")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Supplier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,6 +28,6 @@ public class Supplier {
     @Column(name = "address")
     private String address;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Product> products;
+//    @OneToMany(cascade = CascadeType.ALL)
+//    private List<Product> products;
 }

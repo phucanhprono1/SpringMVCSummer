@@ -5,7 +5,10 @@
 package com.group1.springmvcsummer.model;
 
 import javax.persistence.*;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 /**
@@ -15,6 +18,8 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "tbl_user")
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,5 +33,4 @@ public class User {
     private String gender;
     @Column(unique = true, name = "username")
     private String username;
-   
 }

@@ -39,12 +39,12 @@ public class CartService {
             throws Exception{
         Cart cart;
         cart = cRepo.findByUserId(customerId);
-        Optional<Product> itemOpt = pRepo.findById(productId);
-        if (itemOpt.isEmpty()) {
+        Product itemOpt = pRepo.findById(productId);
+        if (itemOpt==null) {
             throw new Exception("Product not found!");
         }
         CartItem cartItem = new CartItem();
-        cartItem.setProduct(itemOpt.get());
+        cartItem.setProduct(itemOpt);
         cartItem.setQuantity(quantity);
 
         // Get the cart for the user, or create a new cart if one doesn't exist
@@ -60,7 +60,7 @@ public class CartService {
         }
         if (flag) {
             CartItem cit = new CartItem();
-            cit.setProduct(itemOpt.get());
+            cit.setProduct(itemOpt);
             cit.setQuantity(quantity);
 
             cartItemRepo.save(cit);
@@ -91,8 +91,8 @@ public class CartService {
             throw new Exception("Customer not found!");
         }
 
-        Optional<Product> itemOpt = pRepo.findById(productId);
-        if (itemOpt.isEmpty()) {
+        Product itemOpt = pRepo.findById(productId);
+        if (itemOpt == null) {
             throw new Exception("Product not found!");
         }
         User customer = opt.get();
@@ -148,8 +148,8 @@ public class CartService {
             throws Exception {
         
 
-        Optional<Product> itemOpt = pRepo.findById(productId);
-        if (itemOpt.isEmpty()) {
+        Product itemOpt = pRepo.findById(productId);
+        if (itemOpt==null) {
             throw new Exception("Product not found!");
         }
 
@@ -188,8 +188,8 @@ public class CartService {
             throw new Exception("Customer not found!");
         }
 
-        Optional<Product> itemOpt = pRepo.findById(productId);
-        if (itemOpt.isEmpty()) {
+        Product itemOpt = pRepo.findById(productId);
+        if (itemOpt==null) {
             throw new Exception("Product not found!");
         }
 

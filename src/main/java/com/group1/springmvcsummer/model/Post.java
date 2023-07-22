@@ -6,7 +6,10 @@ package com.group1.springmvcsummer.model;
 
 import java.time.LocalDateTime;
 import javax.persistence.*;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  *
@@ -15,6 +18,8 @@ import lombok.Data;
 @Entity
 @Table(name = "tbl_posts")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Post {
 
     @Id

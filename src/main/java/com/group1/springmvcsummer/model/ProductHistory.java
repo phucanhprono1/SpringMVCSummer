@@ -29,11 +29,15 @@ public class ProductHistory {
 //    @JoinColumn(name = "admin_id", nullable = false)
 //    private Admin admin;
 
+    @Column(name = "new_quantity")
+    private int newQuantity;
+    
     @Column(name = "change_time")
     private LocalDateTime changeTime;
 
-    public ProductHistory(Product product) {
+    public ProductHistory(Product product, int newQuantity) {
         this.product = product;
+        this.newQuantity = newQuantity;
         this.changeTime = LocalDateTime.now();
     }
 }

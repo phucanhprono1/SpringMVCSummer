@@ -49,7 +49,7 @@
                         <td>${item.product.name}</td>
                         <td class="cart-item">
                             <div class="actions">
-                                <button onclick="increaseQuantity(${item.id})" class="btn btn-sm btn-primary">+</button>
+                                <button onclick="${pageContext.request.contextPath}/" class="btn btn-sm btn-primary">+</button>
                                 <span class="quantity">${item.quantity}</span>
                                 <button onclick="decreaseQuantity(${item.id})" class="btn btn-sm btn-primary">-</button>
                             </div>

@@ -5,10 +5,14 @@
 package com.group1.springmvcsummer.service;
 
 import com.group1.springmvcsummer.model.Product;
+import com.group1.springmvcsummer.model.ProductHistory;
+import com.group1.springmvcsummer.repository.ProductHistoryRepository;
 import com.group1.springmvcsummer.repository.ProductRepository;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
@@ -17,21 +21,46 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class ProductService {
+    @Autowired
+    private ProductRepository productRepository;
+    @Autowired
+    private ProductHistoryRepository productHistoryRepository;
 
-    private final ProductRepository productRepository;
-    
-    public Product saveProduct(Product product){
-        return productRepository.save(product);
-    }
-    public Product findProductById(Long Id){
-        return productRepository.findById(Id);
-    }
-    
-    public List<Product> getAllProduct(){
+
+    public List<Product> getAllProducts() {
         return productRepository.findAll();
     }
 
-    public Product findProductByName(String name) {
+    public Product getProductById(Long id) {
+        return productRepository.findById(id);
+    }
+
+    @Transactional
+    public void addProduct(Product product) {
+        productRepository.save(product);
+    }
+
+
+    @Transactional
+    public void updateProduct(Product product) {
+        productRepository.save(product);
+    }
+
+    @Transactional
+    public void deleteProduct(Long id) {
+        productRepository.deleteById(id);
+    }
+    @Transactional
+    public ProductHistory saveProductHistory(Product product, int newQuantity) {
+        ProductHistory productHistory = new ProductHistory(product, newQuantity);
+        return productHistoryRepository.save(productHistory);
+    }
+    
+    public List<Product> searchProductsByName(String name) {
+        return productRepository.findByNamelike(name);
+    }
+
+    public Product getProductByName(String name) {
         return productRepository.findByName(name);
     }
 }

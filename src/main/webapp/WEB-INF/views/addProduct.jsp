@@ -61,7 +61,7 @@
                 </select>
                 <br>
                 <c:set var="emptyList" value="[]" />
-                <input name="listComment" value="${emptyList}" />
+                <input type="hidden" name="listComment" value="${emptyList}" />
                 <!-- Add other input fields for the product -->
                 <br>
                 <input type="submit" value="Add Product">

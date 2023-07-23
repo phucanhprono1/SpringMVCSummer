@@ -36,6 +36,8 @@ public class Product {
     private String brand;
     private int quantity;
     private int numberSell;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<ProductHistory> productHistories;
     
     @ManyToOne
     @JoinColumn(name = "category_id")

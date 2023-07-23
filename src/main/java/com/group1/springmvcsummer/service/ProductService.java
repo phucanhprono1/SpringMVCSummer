@@ -48,7 +48,20 @@ public class ProductService {
 
     @Transactional
     public void deleteProduct(Long id) {
-        productRepository.deleteById(id);
+        Product product = getProductById(id);
+        if (product != null) {
+            // Remove associated ProductHistory entries
+            List<ProductHistory> productHistories = product.getProductHistories();
+            if (productHistories != null && !productHistories.isEmpty()) {
+                productHistories.forEach(productHistory -> {
+                    productHistory.setProduct(null);
+                    productHistoryRepository.delete(productHistory);
+                });
+            }
+
+            // Delete the Product entity
+            productRepository.delete(product);
+        }
     }
     @Transactional
     public ProductHistory saveProductHistory(Product product, int newQuantity) {

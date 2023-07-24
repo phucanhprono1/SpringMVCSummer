@@ -4,12 +4,18 @@
  */
 package com.group1.springmvcsummer.controller;
 
+import aj.org.objectweb.asm.TypeReference;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.TypeFactory;
 import com.group1.springmvcsummer.model.Category;
+import com.group1.springmvcsummer.model.Comment;
 import com.group1.springmvcsummer.model.Product;
 import com.group1.springmvcsummer.model.Supplier;
 import com.group1.springmvcsummer.service.CategoryService;
 import com.group1.springmvcsummer.service.ProductService;
 import com.group1.springmvcsummer.service.SupplierService;
+import java.util.ArrayList;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -60,10 +66,11 @@ public class ProductController {
     }
 
     @PostMapping("/addNew")
-    public String addNewProduct(@ModelAttribute("product") Product product) {
+    public String addNewProduct(@ModelAttribute("product") Product product, BindingResult bindingResult) {
+      
+
         productService.addProduct(product);
-        Product savedProduct = productService.getProductByName(product.getName());
-        productService.saveProductHistory(savedProduct, product.getQuantity());
+        productService.saveProductHistory(product, product.getQuantity());
         return "redirect:/products/list";
     }
 
@@ -79,7 +86,7 @@ public class ProductController {
 
     @PostMapping("/checkProduct")
     public String checkProduct(@RequestParam(value = "name") String name, Model model) {
-        
+
         List<Category> categories = categoryService.getAllCategories();
         List<Supplier> suppliers = supplierService.getAllSuppliers();
 

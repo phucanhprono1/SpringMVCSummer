@@ -66,7 +66,7 @@ public class ProductController {
     }
 
     @PostMapping("/addNew")
-    public String addNewProduct(@ModelAttribute("product") Product product, BindingResult bindingResult) {
+    public String addNewProduct(@ModelAttribute("product") Product product,BindingResult bindingResult) {
       
 
         productService.addProduct(product);
@@ -103,14 +103,18 @@ public class ProductController {
 
     @GetMapping("/showEditForm")
     public String showEditForm(@RequestParam("id") Long productId, Model model) {
+        List<Category> categories = categoryService.getAllCategories();
+        List<Supplier> suppliers = supplierService.getAllSuppliers();
+
+        model.addAttribute("categories", categories);
+        model.addAttribute("suppliers", suppliers);
         Product product = productService.getProductById(productId);
         model.addAttribute("product", product);
         return "editProduct";
     }
 
     @PostMapping("/update")
-    public String updateProduct(@ModelAttribute("product") Product product, @RequestParam("oldQuantity") int oldQuantity) {
-        productService.saveProductHistory(product, oldQuantity);
+    public String updateProduct(@ModelAttribute("product") Product product, BindingResult bindingResult) {
         productService.updateProduct(product);
         return "redirect:/products/list";
     }

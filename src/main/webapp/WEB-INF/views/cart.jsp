@@ -26,10 +26,6 @@
             margin-left: auto;
         }
     </style>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        // ... Your existing JavaScript code ...
-    </script>
 </head>
 <body>
     <div class="container mt-4">
@@ -49,19 +45,29 @@
                         <td>${item.product.name}</td>
                         <td class="cart-item">
                             <div class="actions">
-                                <button onclick="${pageContext.request.contextPath}/" class="btn btn-sm btn-primary">+</button>
+                                <form action="${pageContext.request.contextPath}/cart/increase/${cart.customerId}/${item.product.id}" method="post">
+                                    <button type="submit" class="btn btn-sm btn-primary">+</button>
+                                </form>
                                 <span class="quantity">${item.quantity}</span>
-                                <button onclick="decreaseQuantity(${item.id})" class="btn btn-sm btn-primary">-</button>
+                                <form action="${pageContext.request.contextPath}/cart/decrease/${cart.user.id}/${item.product.id}" method="post">
+                                    <button type="submit" class="btn btn-sm btn-primary">-</button>
+                                </form>
                             </div>
                         </td>
                         <td>${item.product.price}</td>
-                        <td><button onclick="removeItem(${item.id})" class="btn btn-sm btn-danger">Remove</button></td>
+                        <td>
+                            <form action="${pageContext.request.contextPath}/cart/remove/${cart.user.id}/${item.product.id}" method="post">
+                                <button type="submit" class="btn btn-sm btn-danger">Remove</button>
+                            </form>
+                        </td>
                     </tr>
                 </c:forEach>
             </tbody>
         </table>
         <p>Total Price: <span id="total-price">${cart.total_price}</span></p>
-        <button onclick="removeAllItems()" class="btn btn-danger">Remove All</button>
+        <form action="${pageContext.request.contextPath}/cart/removeAll/${cart.user.id}" method="post">
+            <button type="submit" class="btn btn-danger">Remove All</button>
+        </form>
     </div>
 
     <!-- Include Bootstrap JS -->

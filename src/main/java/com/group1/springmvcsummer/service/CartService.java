@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
@@ -83,7 +84,7 @@ public class CartService {
 
     }
 
-    
+    @Transactional
     public Cart removeProductFromCart(Long customerId, Long productId)
             throws Exception{
         Optional<User> opt = crRepo.findById(customerId);
@@ -124,7 +125,7 @@ public class CartService {
 
     }
 
-  
+    @Transactional
     public Cart removeAllProduct(Long customerId) throws Exception {
        
         Cart c;
@@ -143,7 +144,7 @@ public class CartService {
 
     }
 
-    
+    @Transactional
     public Cart increaseProductQuantity(Long customerId, Long productId)
             throws Exception {
         
@@ -180,7 +181,7 @@ public class CartService {
         return cart;
     }
 
-    
+    @Transactional
     public Cart decreaseProductQuantity(Long customerId, Long productId)
             throws Exception {
         Optional<User> opt = crRepo.findById(customerId);

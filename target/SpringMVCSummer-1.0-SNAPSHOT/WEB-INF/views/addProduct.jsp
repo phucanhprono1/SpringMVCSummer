@@ -64,6 +64,31 @@
                 <input type="hidden" name="listComment" value="${emptyList}" />
                 <!-- Add other input fields for the product -->
                 <br>
+                <label for="color">Color:</label>
+                <input type="text" name="color">
+                <br>
+                <label for="description">Description:</label>
+                <textarea name="description"></textarea>
+                <br>
+                <label for="image">Image:</label>
+                <input type="text" name="image">
+                <br>
+                <label for="size">Size:</label>
+                <input type="text" name="size">
+                <br>
+                <label for="gender">Gender:</label>
+                <select name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Unisex">Unisex</option>
+                </select>
+                <br>
+                <label for="brand">Brand:</label>
+                <input type="text" name="brand">
+                <br>
+                <label for="numberSell">Number Sell:</label>
+                <input type="hidden" name="numberSell" value="0">
+                <br>
                 <input type="submit" value="Add Product">
             </form>
         </c:if>

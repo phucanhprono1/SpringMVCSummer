@@ -47,14 +47,15 @@
                 <label for="quantity">Quantity:</label>
                 <input type="number" name="quantity" required>
                 <br>
-                <select name="category" required>
+                <label for="ctid">Category:</label>
+                <select name="ctid" required>
                     <c:forEach items="${categories}" var="category">
                         <option value="${category.id}">${category.name}</option>
                     </c:forEach>
                 </select>
                 <br>
-                <label for="supplier">Supplier:</label>
-                <select name="supplier" required>
+                <label for="spid">Supplier:</label>
+                <select name="spid" required>
                     <c:forEach items="${suppliers}" var="supplier">
                         <option value="${supplier.id}">${supplier.name}</option>
                     </c:forEach>

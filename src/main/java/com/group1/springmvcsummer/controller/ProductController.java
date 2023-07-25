@@ -66,8 +66,18 @@ public class ProductController {
     }
 
     @PostMapping("/addNew")
-    public String addNewProduct(@ModelAttribute("product") Product product,BindingResult bindingResult) {
-      
+    public String addNewProduct(@ModelAttribute("product") Product product,
+            @RequestParam("ctid") Long categoryId,
+            @RequestParam("spid") Long supplierId,
+            BindingResult bindingResult) {
+
+        // Fetch the selected category and supplier using their IDs
+        Category category = categoryService.getCategoryById(categoryId);
+        Supplier supplier = supplierService.getSupplierById(supplierId);
+
+        // Set the selected category and supplier in the product object
+        product.setCategory(category);
+        product.setSupplier(supplier);
 
         productService.addProduct(product);
         productService.saveProductHistory(product, product.getQuantity());

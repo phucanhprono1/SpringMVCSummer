@@ -23,8 +23,12 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
+            <th>Brand</th>
+            <th>Image</th>
             <th>Price</th>
             <th>Quantity</th>
+            <th>Category</th>
+            <th>Supplier</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
@@ -32,8 +36,12 @@
             <tr>
                 <td>${product.id}</td>
                 <td>${product.name}</td>
+                <td>${product.brand}</td>
+                <td><img width="50dp" height="50dp" src="${product.image}" alt="Image placeholder" class="img-fluid"></td>
                 <td>${product.price}</td>
                 <td>${product.quantity}</td>
+                <td>${product.category.name}</td>
+                <td>${product.supplier.name}</td>
                 <td><a href="${pageContext.request.contextPath}/products/showEditForm?id=${product.id}">Edit</a></td>
                 <td><a href="${pageContext.request.contextPath}/products/showDeleteForm?id=${product.id}">Delete</a></td>
             </tr>

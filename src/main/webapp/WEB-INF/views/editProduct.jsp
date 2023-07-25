@@ -26,14 +26,14 @@
         <input type="text" name="quantity" value="${product.quantity}" required>
         <br>
         <label for="category">Category:</label>
-        <select name="category" required>
+        <select name="category.id" required>
             <c:forEach items="${categories}" var="category">
                 <option value="${category.id}" ${product.category.id == category.id ? 'selected' : ''}>${category.name}</option>
             </c:forEach>
         </select>
         <br>
         <label for="supplier">Supplier:</label>
-        <select name="supplier" required>
+        <select name="supplier.id" required>
             <c:forEach items="${suppliers}" var="supplier">
                 <option value="${supplier.id}" ${product.supplier.id == supplier.id ? 'selected' : ''}>${supplier.name}</option>
             </c:forEach>

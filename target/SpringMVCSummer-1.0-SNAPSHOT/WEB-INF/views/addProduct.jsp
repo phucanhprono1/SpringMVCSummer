@@ -47,17 +47,17 @@
                 <label for="quantity">Quantity:</label>
                 <input type="number" name="quantity" required>
                 <br>
-                <label for="ctid">Category:</label>
-                <select name="ctid" required>
-                    <c:forEach items="${categories}" var="category">
-                        <option value="${category.id}">${category.name}</option>
+                <label for="category">Category:</label>
+                <select name="category.id" required>
+                    <c:forEach items="${categories}" var="cate">
+                        <option value="${cate.id}">${cate.name}</option>
                     </c:forEach>
                 </select>
                 <br>
-                <label for="spid">Supplier:</label>
-                <select name="spid" required>
-                    <c:forEach items="${suppliers}" var="supplier">
-                        <option value="${supplier.id}">${supplier.name}</option>
+                <label for="supplier">Supplier:</label>
+                <select name="supplier.id" required>
+                    <c:forEach items="${suppliers}" var="spr">
+                        <option value="${spr.id}">${spr.name}</option>
                     </c:forEach>
                 </select>
                 <br>
@@ -87,8 +87,8 @@
                 <label for="brand">Brand:</label>
                 <input type="text" name="brand">
                 <br>
-                <label for="numberSell">Number Sell:</label>
-                <input type="hidden" name="numberSell" value="0">
+                <c:set var="initSell" value="0" />
+                <input type="hidden" name="numberSell" value="${initSell}" />
                 <br>
                 <input type="submit" value="Add Product">
             </form>

@@ -35,7 +35,7 @@
         <h2>Categories:</h2>
         <div class="btn-group" role="group" aria-label="Categories">
             <c:forEach items="${categories}" var="category">
-                <a href="/products?cid=${category.id}" class="btn btn-secondary ${category.id == selectedCategoryId ? 'active' : ''}">${category.name}</a>
+                <a href="${pageContext.request.contextPath}/products?cid=${category.id}" class="btn btn-secondary ${category.id == selectedCategoryId ? 'active' : ''}">${category.name}</a>
             </c:forEach>
         </div>
         <c:choose>
@@ -71,7 +71,7 @@
                                     <h5 class="card-title">${product.name}</h5>
                                     <p class="card-text">Price: ${product.price}</p>
                                     <!-- Add more product information here if needed -->
-                                    <a href="/product/${product.id}" class="btn btn-primary">View Details</a>
+                                    <a href="${pageContext.request.contextPath}/product/${product.id}" class="btn btn-primary">View Details</a>
                                 </div>
                             </div>
                         </div>

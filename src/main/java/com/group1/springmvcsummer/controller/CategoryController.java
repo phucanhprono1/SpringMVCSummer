@@ -17,13 +17,13 @@ import org.springframework.web.bind.annotation.*;
  * @author ducan
  */
 @Controller
-@RequestMapping("/categories")
+@RequestMapping("/admin-categories")
 public class CategoryController {
 
     @Autowired
     private CategoryService categoryService; // You need to create this service class to handle business logic
 
-    @GetMapping("/list")
+    @GetMapping
     public String listCategories(Model model) {
         List<Category> categories = categoryService.getAllCategories();
         model.addAttribute("categories", categories);
@@ -39,7 +39,7 @@ public class CategoryController {
     @PostMapping("/add")
     public String addCategory(@ModelAttribute("category") Category category) {
         categoryService.addCategory(category);
-        return "redirect:/categories/list";
+        return "redirect:/admin-categories";
     }
 
     @GetMapping("/showEditForm")
@@ -52,7 +52,7 @@ public class CategoryController {
     @PostMapping("/update")
     public String updateCategory(@ModelAttribute("category") Category category) {
         categoryService.updateCategory(category);
-        return "redirect:/categories/list";
+        return "redirect:/admin-categories";
     }
 
     @GetMapping("/showDeleteForm")
@@ -65,7 +65,7 @@ public class CategoryController {
     @PostMapping("/confirmDelete")
     public String deleteCategory(@RequestParam("id") Long categoryId) {
         categoryService.deleteCategory(categoryId);
-        return "redirect:/categories/list";
+        return "redirect:/admin-categories";
     }
 
     @GetMapping("/searchByName")

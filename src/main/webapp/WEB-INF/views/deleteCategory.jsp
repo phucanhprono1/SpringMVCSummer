@@ -9,16 +9,19 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Delete Category</title>
-</head>
-<body>
-    <h1>Delete Category</h1>
-    <p>Are you sure you want to delete the category "${category.name}"?</p>
-    <form action="${pageContext.request.contextPath}/categories/confirmDelete" method="post">
-        <input type="hidden" name="id" value="${category.id}">
-        <input type="submit" value="Delete">
-    </form>
-</body>
+    <head>
+        <title>Delete Category</title>
+    </head>
+    <body>
+        <jsp:include page="/WEB-INF/views/navbar.jsp" />
+        <h1>Delete Category</h1>
+        <p>Are you sure you want to delete the category "${category.name}"?</p>
+        <form action="${pageContext.request.contextPath}/admin-categories/confirmDelete" method="post">
+            <input type="hidden" name="id" value="${category.id}">
+            <input type="submit" value="Delete">
+        </form>
+        <br>
+        <a href="${pageContext.request.contextPath}/admin-categories">Cancel</a>
+    </body>
 </html>
 

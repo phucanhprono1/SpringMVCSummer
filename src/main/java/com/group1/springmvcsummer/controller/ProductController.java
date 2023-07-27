@@ -34,7 +34,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author ducan
  */
 @Controller
-@RequestMapping("/products")
+@RequestMapping("/admin-products")
 public class ProductController {
 
     @Autowired
@@ -44,7 +44,7 @@ public class ProductController {
     @Autowired
     private SupplierService supplierService;
 
-    @GetMapping("/list")
+    @GetMapping
     public String listProducts(Model model) {
         List<Product> products = productService.getAllProducts();
         model.addAttribute("products", products);
@@ -70,7 +70,7 @@ public class ProductController {
             BindingResult bindingResult) {
         productService.addProduct(product);
         productService.saveProductHistory(product, product.getQuantity());
-        return "redirect:/products/list";
+        return "redirect:/admin-products";
     }
 
     @PostMapping("/updateQuantity")
@@ -80,7 +80,7 @@ public class ProductController {
         existingProduct.setQuantity(existingProduct.getQuantity() + quantity);
         productService.updateProduct(existingProduct);
         productService.saveProductHistory(existingProduct, quantity);
-        return "redirect:/products/list";
+        return "redirect:/admin-products";
     }
 
     @PostMapping("/checkProduct")
@@ -115,7 +115,7 @@ public class ProductController {
     @PostMapping("/update")
     public String updateProduct(@ModelAttribute("product") Product product, BindingResult bindingResult) {
         productService.updateProduct(product);
-        return "redirect:/products/list";
+        return "redirect:/admin-products";
     }
 
     @GetMapping("/showDeleteForm")
@@ -128,7 +128,7 @@ public class ProductController {
     @PostMapping("/confirmDelete")
     public String deleteProduct(@RequestParam("id") Long productId) {
         productService.deleteProduct(productId);
-        return "redirect:/products/list";
+        return "redirect:/admin-products";
     }
 
     @GetMapping("/searchByName")

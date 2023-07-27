@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.*;
  * @author ducan
  */
 @Controller
-@RequestMapping("/suppliers")
+@RequestMapping("/admin-suppliers")
 public class SupplierController {
     
     @Autowired
     private SupplierService supplierService;
 
-    @GetMapping("/list")
+    @GetMapping
     public String listSuppliers(Model model) {
         List<Supplier> suppliers = supplierService.getAllSuppliers();
         model.addAttribute("suppliers", suppliers);
@@ -38,7 +38,7 @@ public class SupplierController {
     @PostMapping("/add")
     public String addSupplier(@ModelAttribute("supplier") Supplier supplier) {
         supplierService.addSupplier(supplier);
-        return "redirect:/suppliers/list";
+        return "redirect:/admin-suppliers";
     }
 
     @GetMapping("/showEditForm")
@@ -51,7 +51,7 @@ public class SupplierController {
     @PostMapping("/update")
     public String updateSupplier(@ModelAttribute("supplier") Supplier supplier) {
         supplierService.updateSupplier(supplier);
-        return "redirect:/suppliers/list";
+        return "redirect:/admin-suppliers";
     }
 
     @GetMapping("/showDeleteForm")
@@ -64,7 +64,7 @@ public class SupplierController {
     @PostMapping("/confirmDelete")
     public String deleteSupplier(@RequestParam("id") Long supplierId) {
         supplierService.deleteSupplier(supplierId);
-        return "redirect:/suppliers/list";
+        return "redirect:/admin-suppliers";
     }
 
     @GetMapping("/searchByName")

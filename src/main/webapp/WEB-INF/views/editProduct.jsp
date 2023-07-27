@@ -12,8 +12,9 @@
     <title>Edit Product</title>
 </head>
 <body>
+    <jsp:include page="/WEB-INF/views/navbar.jsp" />
     <h1>Edit Product</h1>
-    <form action="${pageContext.request.contextPath}/products/update" method="post">
+    <form action="${pageContext.request.contextPath}/admin-products/update" method="post">
         <input type="hidden" name="id" value="${product.id}">
         <input type="hidden" name="oldQuantity" value="${product.quantity}">
         <label for="name">Name:</label>
@@ -64,12 +65,10 @@
         <label for="numberSell">Number Sell:</label>
         <input type="number" name="numberSell" value="${product.numberSell}">
         <br>
-        <!-- You can choose how to handle the productHistories and listComment fields (e.g., display them in the form or handle them separately) -->
-
         <input type="submit" value="Save">
     </form>
     <br>
-    <a href="${pageContext.request.contextPath}/products/list">Back to List</a>
+    <a href="${pageContext.request.contextPath}/admin-products">Back to List</a>
 </body>
 </html>
 

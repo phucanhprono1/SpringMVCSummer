@@ -12,8 +12,9 @@
     <title>Edit Supplier</title>
 </head>
 <body>
+    <jsp:include page="/WEB-INF/views/navbar.jsp" />
     <h1>Edit Supplier</h1>
-    <form action="${pageContext.request.contextPath}/suppliers/update" method="post">
+    <form action="${pageContext.request.contextPath}/admin-suppliers/update" method="post">
         <input type="hidden" name="id" value="${supplier.id}">
         <label for="name">Name:</label>
         <input type="text" name="name" value="${supplier.name}" required>
@@ -24,6 +25,6 @@
         <input type="submit" value="Save">
     </form>
     <br>
-    <a href="${pageContext.request.contextPath}/suppliers/list">Back to List</a>
+    <a href="${pageContext.request.contextPath}/admin-suppliers">Back to List</a>
 </body>
 </html>

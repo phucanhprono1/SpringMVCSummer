@@ -13,13 +13,14 @@
     <title>Suppliers List</title>
 </head>
 <body>
+    <jsp:include page="/WEB-INF/views/navbar.jsp" />
     <h1>Suppliers List</h1>
     <form action="${pageContext.request.contextPath}/suppliers/searchByName" method="get">
         <input type="text" name="name" placeholder="Enter supplier name">
         <input type="submit" value="Search">
     </form>
     <br>
-    <table>
+    <table class="table table-hover table-responsive-md">
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -32,12 +33,12 @@
                 <td>${supplier.id}</td>
                 <td>${supplier.name}</td>
                 <td>${supplier.address}</td>
-                <td><a href="${pageContext.request.contextPath}/suppliers/showEditForm?id=${supplier.id}">Edit</a></td>
-                <td><a href="${pageContext.request.contextPath}/suppliers/showDeleteForm?id=${supplier.id}">Delete</a></td>
+                <td><a href="${pageContext.request.contextPath}/admin-suppliers/showEditForm?id=${supplier.id}">Edit</a></td>
+                <td><a href="${pageContext.request.contextPath}/admin-suppliers/showDeleteForm?id=${supplier.id}">Delete</a></td>
             </tr>
         </c:forEach>
     </table>
     <br>
-    <a href="${pageContext.request.contextPath}/suppliers/showAddForm">Add Supplier</a>
+    <a href="${pageContext.request.contextPath}/admin-suppliers/showAddForm">Add Supplier</a>
 </body>
 </html>

@@ -20,4 +20,8 @@ public class HomeController {
         model.addAttribute("message", "Xin chào từ Controller!");
         return "home";
     }
+    @GetMapping("/admin")
+    public String admin(Model model){
+        return "admin";
+    }
 }

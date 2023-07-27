@@ -13,8 +13,9 @@
         <title>Add Product</title>
     </head>
     <body>
+        <jsp:include page="/WEB-INF/views/navbar.jsp" />
         <h1>Add Product</h1>
-        <form action="${pageContext.request.contextPath}/products/checkProduct" method="post">
+        <form action="${pageContext.request.contextPath}/admin-products/checkProduct" method="post">
             <label for="name">Product Name:</label>
             <input type="text" name="name" required>
             <br>
@@ -37,7 +38,7 @@
 
         <c:if test="${existingProduct eq null}">
             <h2>Product does not exist. Add new product:</h2>
-            <form action="${pageContext.request.contextPath}/products/addNew" method="post">
+            <form action="${pageContext.request.contextPath}/admin-products/addNew" method="post">
                 <label for="name">Product Name:</label>
                 <input type="text" name="name" value="${param.name}" required readonly>
                 <br>
@@ -95,7 +96,7 @@
         </c:if>
 
         <br>
-        <a href="${pageContext.request.contextPath}/products/list">Back to List</a>
+        <a href="${pageContext.request.contextPath}/admin-products">Back to List</a>
     </body>
 </html>
 

@@ -20,7 +20,9 @@ import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  *
@@ -28,32 +30,35 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @Entity
-@Table(name="tbl_order")
+@Getter
+@Setter
+@Table(name = "tbl_order")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Orders {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-	private LocalDateTime date;
-	private String orderStatus;
-	private String location;
-	@Column(name="total_price")
-	private float total_price;
-        
-        @OneToOne
-        private Discount discount;
+    private LocalDateTime date;
+    private String orderStatus;
+    private String location;
+    @Column(name = "total_price")
+    private float total_price;
 
-	private String paymentMethod;
-	private String paymentStatus;
+    @OneToOne
+    private Discount discount;
 
+    private String paymentMethod;
+    private String paymentStatus;
 
-	@ManyToOne(cascade = CascadeType.ALL)
-	private User user;
+    @ManyToOne(cascade = CascadeType.ALL)
+    private User user;
 
-	@OneToMany(cascade = CascadeType.ALL)
-	private List<OrderItem> orderItems = new ArrayList<>() ;
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<OrderItem> orderItems = new ArrayList<>();
+
+  
 
 }

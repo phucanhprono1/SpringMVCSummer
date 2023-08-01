@@ -33,12 +33,12 @@
                 <td>${supplier.id}</td>
                 <td>${supplier.name}</td>
                 <td>${supplier.address}</td>
-                <td><a href="${pageContext.request.contextPath}/admin-suppliers/showEditForm?id=${supplier.id}">Edit</a></td>
-                <td><a href="${pageContext.request.contextPath}/admin-suppliers/showDeleteForm?id=${supplier.id}">Delete</a></td>
+                <td><a href="${pageContext.request.contextPath}/admin-suppliers/showEditForm?id=${supplier.id}" class="btn btn-info">Edit</a></td>
+                <td><a href="${pageContext.request.contextPath}/admin-suppliers/showDeleteForm?id=${supplier.id}" class=" btn btn-danger">Delete</a></td>
             </tr>
         </c:forEach>
     </table>
     <br>
-    <a href="${pageContext.request.contextPath}/admin-suppliers/showAddForm">Add Supplier</a>
+    <a href="${pageContext.request.contextPath}/admin-suppliers/showAddForm" class="btn btn-outline-primary">Add Supplier</a>
 </body>
 </html>

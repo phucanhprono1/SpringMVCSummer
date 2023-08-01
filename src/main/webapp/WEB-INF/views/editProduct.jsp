@@ -63,7 +63,7 @@
         <input type="text" name="brand" value="${product.brand}">
         <br>
         <label for="numberSell">Number Sell:</label>
-        <input type="number" name="numberSell" value="${product.numberSell}">
+        <input type="hidden" name="numberSell" value="${product.numberSell}">
         <br>
         <input type="submit" value="Save">
     </form>

@@ -36,20 +36,20 @@ public class Product {
     private String brand;
     private int quantity;
     private int numberSell;
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "product_id")
     private List<ProductHistory> productHistories;
-    
+
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
-    
+
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private List<Comment> listComment;
-    
+
     @ManyToOne
     @JoinColumn(name = "supplier_id")
     private Supplier supplier;
 
-   
 }

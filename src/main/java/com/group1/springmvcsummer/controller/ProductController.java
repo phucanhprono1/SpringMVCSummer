@@ -11,8 +11,10 @@ import com.fasterxml.jackson.databind.type.TypeFactory;
 import com.group1.springmvcsummer.model.Category;
 import com.group1.springmvcsummer.model.Comment;
 import com.group1.springmvcsummer.model.Product;
+import com.group1.springmvcsummer.model.ProductHistory;
 import com.group1.springmvcsummer.model.Supplier;
 import com.group1.springmvcsummer.service.CategoryService;
+import com.group1.springmvcsummer.service.ProductHistoryService;
 import com.group1.springmvcsummer.service.ProductService;
 import com.group1.springmvcsummer.service.SupplierService;
 import java.util.ArrayList;
@@ -43,6 +45,8 @@ public class ProductController {
     private CategoryService categoryService;
     @Autowired
     private SupplierService supplierService;
+    @Autowired
+    private ProductHistoryService productHistoryService;
 
     @GetMapping
     public String listProducts(Model model) {
@@ -136,5 +140,23 @@ public class ProductController {
         List<Product> products = productService.searchProductsByName(name);
         model.addAttribute("products", products);
         return "listProducts";
+    }
+
+    @GetMapping("/viewAllProductHistory")
+    public String viewAllProductHistory(Model model) {
+        List<ProductHistory> allProductHistory = productHistoryService.getAllProductHistory();
+        model.addAttribute("allProductHistory", allProductHistory);
+        return "allProductHistory";
+    }
+
+    @GetMapping("/viewProductHistory")
+    public String viewProductHistory(@RequestParam("id") Long productId, Model model) {
+        Product product = productService.getProductById(productId);
+
+        List<ProductHistory> productHistory = productHistoryService.getProductHistory(productId);
+        model.addAttribute("productHistory", productHistory);
+        model.addAttribute("product", product);
+        return "productHistory";
+
     }
 }

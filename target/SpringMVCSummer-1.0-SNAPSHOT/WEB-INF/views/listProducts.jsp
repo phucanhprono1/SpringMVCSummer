@@ -32,6 +32,7 @@
             <th>Supplier</th>
             <th>Edit</th>
             <th>Delete</th>
+            <th>History</th>
         </tr>
         <c:forEach items="${products}" var="product">
             <tr>
@@ -43,12 +44,13 @@
                 <td>${product.quantity}</td>
                 <td>${product.category.name}</td>
                 <td>${product.supplier.name}</td>
-                <td><a href="${pageContext.request.contextPath}/admin-products/showEditForm?id=${product.id}">Edit</a></td>
-                <td><a href="${pageContext.request.contextPath}/admin-products/showDeleteForm?id=${product.id}">Delete</a></td>
+                <td><a href="${pageContext.request.contextPath}/admin-products/showEditForm?id=${product.id}" class="btn btn-info">Edit</a></td>
+                <td><a href="${pageContext.request.contextPath}/admin-products/showDeleteForm?id=${product.id}" class=" btn btn-danger">Delete</a></td>
+                <td><a href="${pageContext.request.contextPath}/admin-products/viewProductHistory?id=${product.id}" class="btn btn-success">View History</a></td>
             </tr>
         </c:forEach>
     </table>
     <br>
-    <a href="${pageContext.request.contextPath}/admin-products/showAddForm">Add Product</a>
+    <a href="${pageContext.request.contextPath}/admin-products/showAddForm" class="btn btn-outline-primary">Add Product</a>
 </body>
 </html>

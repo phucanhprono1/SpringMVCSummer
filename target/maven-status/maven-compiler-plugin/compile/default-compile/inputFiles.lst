@@ -19,6 +19,7 @@ D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\OrderItem.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\SupplierService.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Product.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\CategoryService.java
+D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\ProductHistoryService.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Supplier.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\DiscountService.java
 D:\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\UserRepository.java

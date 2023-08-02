@@ -10,6 +10,7 @@
 <html>
     <head>
         <title>Product History</title>
+        <meta charset="UTF-8">
     </head>
     <body>
         <jsp:include page="/WEB-INF/views/navbar.jsp" />

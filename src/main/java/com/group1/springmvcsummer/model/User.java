@@ -33,4 +33,8 @@ public class User {
     private String gender;
     @Column(unique = true, name = "username")
     private String username;
+    @Column(columnDefinition = "nvarchar(255)") // Adjust the length as needed
+    private String name;
+    @Transient
+    private String confirmPassword;
 }

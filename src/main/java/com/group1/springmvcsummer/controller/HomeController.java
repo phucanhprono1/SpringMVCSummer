@@ -6,8 +6,10 @@ package com.group1.springmvcsummer.controller;
 
 import com.group1.springmvcsummer.model.Category;
 import com.group1.springmvcsummer.model.Product;
+import com.group1.springmvcsummer.model.User;
 import com.group1.springmvcsummer.service.CategoryService;
 import com.group1.springmvcsummer.service.ProductService;
+import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,21 +31,27 @@ public class HomeController {
     private ProductService productService;
 
     @GetMapping("/")
-    public String homepage(Model model) {
+    public String homepage(Model model, HttpSession session) {
         model.addAttribute("categories", categoryService.getAllCategories());
         model.addAttribute("allproducts", productService.getAllProducts());
+        User user = (User) session.getAttribute("user");
+        model.addAttribute("user", user);
         return "home";
     }
 
     @GetMapping("/category")
-    public String viewAllCategories(Model model) {
+    public String viewAllCategories(Model model, HttpSession session) {
         model.addAttribute("categories", categoryService.getAllCategories());
+        User user = (User) session.getAttribute("user");
+        model.addAttribute("user", user);
         return "home";
     }
 
     @GetMapping("/products")
-    public String viewAllProductByCategory(Model model, @RequestParam("cid") Long id) {
+    public String viewAllProductByCategory(Model model, @RequestParam("cid") Long id, HttpSession session) {
         model.addAttribute("categories", categoryService.getAllCategories());
+        User user = (User) session.getAttribute("user");
+        model.addAttribute("user", user);
         if (id != null) {
             model.addAttribute("prodByCate", productService.getProductByCategoryId(id));
             // Lấy thông tin tên category và truyền vào Model
@@ -56,7 +64,9 @@ public class HomeController {
     }
 
     @GetMapping("/product/{id}")
-    public String viewProductDetails(Model model, @PathVariable("id") Long productId) {
+    public String viewProductDetails(Model model, @PathVariable("id") Long productId, HttpSession session) {
+        User user = (User) session.getAttribute("user");
+        model.addAttribute("user", user);
         // Get product details based on the productId
         Product product = productService.getProductById(productId);
         model.addAttribute("product", product);

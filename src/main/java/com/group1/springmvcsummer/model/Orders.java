@@ -53,7 +53,7 @@ public class Orders {
     private String paymentMethod;
     private String paymentStatus;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private User user;
 
     @OneToMany(cascade = CascadeType.ALL)

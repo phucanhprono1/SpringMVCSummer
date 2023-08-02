@@ -1,4 +1,5 @@
 com\group1\springmvcsummer\controller\CategoryController.class
+com\group1\springmvcsummer\controller\LoginController.class
 com\group1\springmvcsummer\model\Post.class
 com\group1\springmvcsummer\model\ProductHistory.class
 com\group1\springmvcsummer\service\DiscountService.class

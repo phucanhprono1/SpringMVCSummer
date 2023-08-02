@@ -33,4 +33,6 @@ public class User {
     private String gender;
     @Column(unique = true, name = "username")
     private String username;
+    @Transient
+    private String confirmPassword;
 }

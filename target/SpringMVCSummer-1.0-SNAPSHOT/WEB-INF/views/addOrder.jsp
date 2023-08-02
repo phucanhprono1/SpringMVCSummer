@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
+        <jsp:include page="navBarUser.jsp"/>
         <div class="container mt-4">
             <h1>Add Order</h1>
             <h2>Cart</h2>
@@ -40,7 +41,7 @@
             <p>Total Price: <span id="total-price">${cart.total_price}</span></p>
 
             <!-- Order form -->
-            <form action="${pageContext.request.contextPath}/submitOrder" method="post">
+            <form action="${pageContext.request.contextPath}/order/submitOrder" method="post">
                 <!-- Add any additional form fields for the order (e.g., address, payment method) -->
                 <div class="form-group">
                     <label for="address">Address:</label>
@@ -51,9 +52,6 @@
                     <label for="paymentMethod">Payment Method:</label>
                     <input type="text" id="paymentMethod" name="paymentMethod" class="form-control" required>
                 </div>
-
-                <!-- Add a hidden input field to pass the user ID to the controller -->
-                <input type="hidden" name="userId" value="${cart.user.id}">
 
                 <button type="submit" class="btn btn-success">Place Order</button>
             </form>

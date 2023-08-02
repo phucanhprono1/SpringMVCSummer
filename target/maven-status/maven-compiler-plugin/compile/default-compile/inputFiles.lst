@@ -1,3 +1,4 @@
+C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\OrderItemRepository.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\UserService.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Cart.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\CartItemRepository.java
@@ -7,6 +8,7 @@ C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\spri
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\ProductRepository.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Discount.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Supplier.java
+C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\OrderRepository.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\DiscountRepository.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Category.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\OrderItem.java
@@ -30,6 +32,9 @@ C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\spri
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\model\Orders.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\CategoryRepository.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\repository\ProductHistoryRepository.java
+C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\controller\LoginController.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\CategoryService.java
+C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\service\OrderService.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\controller\CategoryController.java
 C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\controller\HomeController.java
+C:\Users\Phuc Anh\GitHubRepository\SpringMVCSummer\src\main\java\com\group1\springmvcsummer\controller\OrderController.java

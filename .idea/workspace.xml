@@ -1,10 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SpringMVCSummer:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a14e670-5131-4719-9d38-4723aa974b3c" name="Changes" comment="merge main" />
+    <list default="true" id="1a14e670-5131-4719-9d38-4723aa974b3c" name="Changes" comment="merge main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/repository/DiscountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/repository/DiscountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navBarUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navBarUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/config/AppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/config/AppConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/SupplierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/SupplierController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/CartItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Discount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Discount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/OrderItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/ProductHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/ProductHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Supplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/AdminRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/AdminRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/CartItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/CartItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/CartRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/CartRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/CategoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/DiscountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/DiscountRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/OrderItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/OrderItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/SupplierRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/SupplierRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/CartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/DiscountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/DiscountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/SupplierService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/SupplierService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/addOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/addOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navBarUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navBarUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/productDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/productDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/config/AppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/config/AppConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/SupplierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/SupplierController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/CartItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Discount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Discount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/OrderItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/ProductHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/ProductHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Supplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/AdminRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/AdminRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/CartItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/CartItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/CartRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/CartRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/CategoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/DiscountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/DiscountRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/OrderItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/OrderItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/SupplierRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/SupplierRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/CartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/DiscountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/DiscountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/SupplierService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/SupplierService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,23 +156,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "phucanh",
-    "last_opened_file_path": "D:/SpringMVCSummer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "9a7dad69b633bf6ba02b3edc3d863fac",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;phucanh&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/SpringMVCSummer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9a7dad69b633bf6ba02b3edc3d863fac&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.78">
+}</component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.91">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,7 +186,13 @@
     </configuration>
     <configuration name="Tomcat 8.5.91" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.91" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
+      <deployment>
+        <artifact name="SpringMVCSummer:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SpringMVCSummer_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="ea2f1889-4649-4124-9505-2b489769cab6" />
       </server-settings>
@@ -154,6 +271,9 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SpringMVCSummer:war exploded" />
+        </option>
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -263,6 +383,10 @@
       <workItem from="1689775303899" duration="2195000" />
       <workItem from="1689810450538" duration="610000" />
       <workItem from="1690165214700" duration="14000" />
+      <workItem from="1690621026245" duration="605000" />
+      <workItem from="1690904533969" duration="751000" />
+      <workItem from="1690906023457" duration="595000" />
+      <workItem from="1690941371285" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

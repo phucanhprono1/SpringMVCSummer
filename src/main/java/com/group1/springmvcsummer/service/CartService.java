@@ -35,6 +35,10 @@ public class CartService {
     private ProductRepository pRepo;
     @Autowired
     private CartItemRepository cartItemRepo;
+    
+    public Cart viewCartByUserId(Long userId)throws Exception{
+        return cRepo.findByUserId(userId);
+    }
 
     public Cart addProductToCart(Long customerId, Long productId, int quantity)
             throws Exception{

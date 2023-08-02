@@ -10,6 +10,7 @@ import com.group1.springmvcsummer.repository.CartRepository;
 import com.group1.springmvcsummer.repository.UserRepository;
 import com.group1.springmvcsummer.service.CartService;
 import java.util.function.Supplier;
+import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  *
@@ -27,9 +29,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/cart")
 public class CartController {
-
-    private final CartService cartService;
-    private final CartRepository cartRepository;
+    @Autowired
+    private CartService cartService;
+    @Autowired
+    private CartRepository cartRepository;
 
     @Autowired
     public CartController(CartService cartService, CartRepository cartRepository) {
@@ -37,93 +40,145 @@ public class CartController {
         this.cartRepository = cartRepository;
     }
 
-    @GetMapping("/view/{customerId}")
+    @GetMapping("/view")
     public String getCartByCustomerId(
-            @PathVariable(value = "customerId") Long customerId,
+            HttpSession session,
             Model model
     ) throws Exception {
-        Cart cart;
-        cart = cartRepository.findByUserId(customerId);
-        
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            // Handle the case when the user is not logged in
+            return "redirect:/login";
+        }
+        model.addAttribute("user",user);
+        // Get the user ID from the User object
+        Long customerId = user.getId();
+
+        // Use the customerId to fetch the Cart
+        Cart cart = cartRepository.findByUserId(customerId);
 
         model.addAttribute("cart", cart);
         return "cart";
     }
 
-    @PostMapping("/add/{customerId}/{productId}/{quantity}")
+    @PostMapping("/add/{productId}")
     public String addProductToCart(
-            @PathVariable Long customerId,
+            HttpSession session,
             @PathVariable Long productId,
-            @PathVariable int quantity,
+            @RequestParam("quantity") int quantity,
             Model model
     ) {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            // Handle the case when the user is not logged in
+            return "redirect:/login";
+        }
+
+        // Get the user ID from the User object
+        Long customerId = user.getId();
+        model.addAttribute("user",user);
+        // Use the customerId to fetch the Cart
+        
         try {
             Cart cart = cartService.addProductToCart(customerId, productId, quantity);
             model.addAttribute("cart", cart);
-            return "cart";
+            return "redirect:/cart/view";
         } catch (Exception e) {
             model.addAttribute("error", e.getMessage());
             return "error";
         }
     }
 
-    @PutMapping("/remove/{customerId}/{productId}")
+    @PostMapping("/remove/{productId}")
     public String removeProductFromCart(
-            @PathVariable Long customerId,
             @PathVariable Long productId,
+            HttpSession session,
             Model model
     ) {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            // Handle the case when the user is not logged in
+            return "redirect:/login";
+        }
+        model.addAttribute("user",user);
+        // Get the user ID from the User object
+        Long customerId = user.getId();
+        
         try {
             Cart cart = cartService.removeProductFromCart(customerId, productId);
             model.addAttribute("cart", cart);
-            return "cart";
+            return "redirect:/cart/view";
         } catch (Exception e) {
             model.addAttribute("error", e.getMessage());
             return "error";
         }
     }
 
-    @DeleteMapping("/removeAll/{customerId}")
+    @PostMapping("/removeAll")
     public String removeAllProductFromCart(
-            @PathVariable Long customerId,
+            HttpSession session,
             Model model
     ) {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            // Handle the case when the user is not logged in
+            return "redirect:/login";
+        }
+        model.addAttribute("user",user);
+        // Get the user ID from the User object
+        Long customerId = user.getId();
         try {
             Cart cart = cartService.removeAllProduct(customerId);
             model.addAttribute("cart", cart);
-            return "cart";
+            return "redirect:/cart/view";
         } catch (Exception e) {
             model.addAttribute("error", e.getMessage());
             return "error";
         }
     }
 
-    @PutMapping("/increase/{customerId}/{productId}")
+    @PostMapping("/increase/{productId}")
     public String increaseProductQuantity(
-            @PathVariable Long customerId,
             @PathVariable Long productId,
+            HttpSession session,
             Model model
     ) {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            // Handle the case when the user is not logged in
+            return "redirect:/login";
+        }
+        model.addAttribute("user",user);
+        // Get the user ID from the User object
+        Long customerId = user.getId();
         try {
             Cart cart = cartService.increaseProductQuantity(customerId, productId);
             model.addAttribute("cart", cart);
-            return "cart";
+            return "redirect:/cart/view";
         } catch (Exception e) {
             model.addAttribute("error", e.getMessage());
             return "error";
         }
     }
 
-    @PutMapping("/decrease/{customerId}/{productId}")
+    @PostMapping("/decrease/{productId}")
     public String decreaseProductQuantity(
-            @PathVariable Long customerId,
             @PathVariable Long productId,
+            HttpSession session,
             Model model
     ) {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            // Handle the case when the user is not logged in
+            return "redirect:/login";
+        }
+        model.addAttribute("user",user);
+        // Get the user ID from the User object
+        Long customerId = user.getId();
         try {
             Cart cart = cartService.decreaseProductQuantity(customerId, productId);
             model.addAttribute("cart", cart);
-            return "cart";
+            return "redirect:/cart/view";
         } catch (Exception e) {
             model.addAttribute("error", e.getMessage());
             return "error";

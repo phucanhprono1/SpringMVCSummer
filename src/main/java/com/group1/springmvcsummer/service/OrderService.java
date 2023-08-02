@@ -6,11 +6,13 @@ package com.group1.springmvcsummer.service;
 
 import com.group1.springmvcsummer.model.Cart;
 import com.group1.springmvcsummer.model.CartItem;
+import com.group1.springmvcsummer.model.Discount;
 import com.group1.springmvcsummer.model.OrderItem;
 import com.group1.springmvcsummer.model.Orders;
 import com.group1.springmvcsummer.model.Product;
 import com.group1.springmvcsummer.model.User;
 import com.group1.springmvcsummer.repository.CartRepository;
+import com.group1.springmvcsummer.repository.DiscountRepository;
 import com.group1.springmvcsummer.repository.OrderItemRepository;
 import com.group1.springmvcsummer.repository.OrderRepository;
 import com.group1.springmvcsummer.repository.ProductRepository;
@@ -19,9 +21,12 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
@@ -33,6 +38,7 @@ public class OrderService {
 
     @Autowired
     private OrderRepository orderRepo;
+
     public List<Orders> getAllOrdersByUserId(Long userId) {
         return orderRepo.viewAllOrdersByUserId(userId);
     }
@@ -46,18 +52,20 @@ public class OrderService {
     private ProductRepository productRepo;
     @Autowired
     private UserRepository userRepo;
+    @Autowired
+    private DiscountRepository discountRepo;
+    @Transactional
+    public Orders addOrder(Long userId, String address, String paymentMethod)throws Exception  {
+        User user = userRepo.findById(userId).orElseThrow(() -> new Exception("User not found"));
 
-    public Orders addOrder(Long cid, String address,String paymentMethod) throws Exception{
-
- 
-        Cart cart = cartRepo.findByUserId(cid);
-        Optional<User> userOpt = userRepo.findById(cid);
-        User user = new User();
-        if(!userOpt.isEmpty()){
-            user = userOpt.get();
-        }       
+        Cart cart = cartRepo.findByUserId(user.getId());
+//        Optional<User> userOpt = userRepo.findById(cid);
+//        User user = new User();
+//        if(!userOpt.isEmpty()){
+//            user = userOpt.get();
+//        }       
         Orders order = new Orders();
-        
+
         order.setUser(user);
         order.setDate(LocalDateTime.now());
         order.setOrderStatus("Pending");
@@ -78,15 +86,20 @@ public class OrderService {
             orderItems.add(orderItem);
             orderItemRepo.save(orderItem);
         }
-        
+        Discount dis ;
+        dis = discountRepo.findById(1L);
+        order.setDiscount(dis);
         order.setOrderItems(orderItems);
         order.setTotal_price(cart.getTotal_price());
-        Orders savedOrder = orderRepo.save(order);
-        //xóa cart của customer sau khi order
-        cartService.removeAllProduct(cid);
+        orderRepo.saveAndFlush(order);
+        try {
+            //xóa cart của customer sau khi order
+            cartService.removeAllProduct(user.getId());
+        } catch (Exception ex) {
+            Logger.getLogger(OrderService.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
-        return savedOrder;
+        return order;
     }
 
-    
 }

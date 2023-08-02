@@ -5,10 +5,12 @@
 package com.group1.springmvcsummer.controller;
 
 import com.group1.springmvcsummer.model.Cart;
+import com.group1.springmvcsummer.model.User;
 import com.group1.springmvcsummer.repository.CartRepository;
 import com.group1.springmvcsummer.service.CartService;
 import com.group1.springmvcsummer.service.OrderService;
-import java.security.Principal;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,43 +24,53 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Phuc Anh
  */
 @Controller
-@RequestMapping("order")
+@RequestMapping("/order")
 public class OrderController {
 
-    // ... existing code ...
+    // ... existing code ..
+    private final OrderService orderService;
+    private final CartService cartService;
+    private final CartRepository cartRepository;
+
     @Autowired
-    private OrderService orderService;
-    private CartService cartService;
-    private CartRepository cartRepository;
-    @GetMapping("/addOrder")
-    public String showAddOrderForm(@RequestParam Long userId,Model model) {
-        
-        // Retrieve the authenticated user's ID from the Principal
-        
-        Cart cart;
-        cart = cartRepository.findByUserId(userId);
-        
+    public OrderController(OrderService orderService, CartService cartService, CartRepository cartRepository) {
+        this.orderService = orderService;
+        this.cartService = cartService;
+        this.cartRepository = cartRepository;
+    }
+
+    @GetMapping("/orderForm")
+    public String showAddOrderForm(HttpSession session, Model model) throws Exception {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/login";
+        }
+        Long userId = user.getId();
+        model.addAttribute("user", user);
+        Cart cart = cartService.viewCartByUserId(userId);
+        if (cart == null) {
+
+            return "redirect:/";
+        }
 
         model.addAttribute("cart", cart);
-        // Here you can add additional logic if needed to populate the form with necessary data
-        // ...
 
-        // Return the view name of the add order form (addOrder.jsp, thymeleaf, etc.)
         return "addOrder";
     }
 
     @PostMapping("/submitOrder")
-    public String submitOrder(@RequestParam Long userId, @RequestParam String address, @RequestParam String paymentMethod) {
+    public String submitOrder(HttpSession session, Model model, @RequestParam String address, @RequestParam String paymentMethod) throws Exception {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/login";
+        }
+        Long userId = user.getId();
+        model.addAttribute("user", user);
         try {
-            // Call the addOrder method from the OrderService
             orderService.addOrder(userId, address, paymentMethod);
-            // Redirect to a success page or any other appropriate page
-            return "redirect:/orderSuccess";
+            return "redirect:/";
         } catch (Exception e) {
-            // Handle the exception or display an error page
-            return "error";
+            return "redirect:/cart/view";
         }
     }
-
-    // ... existing code ...
 }

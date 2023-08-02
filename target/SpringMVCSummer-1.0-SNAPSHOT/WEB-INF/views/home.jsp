@@ -8,7 +8,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!-- Import Bootstrap CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom CSS styles for product cards and spacing -->
 <style>
@@ -21,13 +21,38 @@
         max-width: 100%;
         height: auto;
     }
-    .co
+
+    /* Black Background with White Text */
+    .navbar-dark .navbar-brand {
+        color: #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #ddd;
+    }
+
+    /* Add a background color to the active link */
+    .navbar-dark .navbar-nav .nav-link.active {
+        color: #000;
+        background-color: #fff;
+    }
+
+    /* Customize the background color of the navigation bar */
+    .navbar-dark {
+        background-color: #000;
+    }
 </style>
 
 <!DOCTYPE html>
 <html>
     <head>
         <title>Fashion Shop</title>
+        <meta name="viewport" content="width = device-width,initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
         <jsp:include page="navBarUser.jsp"/>
@@ -39,7 +64,7 @@
             </c:forEach>
         </div>
         <c:choose>
-            
+
             <c:when test="${not empty selectedCategoryName}">
                 <h2>Category: ${selectedCategoryName}</h2>
                 <div class="row">
@@ -94,5 +119,8 @@
                 });
             });
         </script>
+        <!-- Import Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
+

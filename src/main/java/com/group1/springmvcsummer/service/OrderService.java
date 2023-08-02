@@ -54,16 +54,12 @@ public class OrderService {
     private UserRepository userRepo;
     @Autowired
     private DiscountRepository discountRepo;
+
     @Transactional
-    public Orders addOrder(Long userId, String address, String paymentMethod)throws Exception  {
+    public Orders addOrder(Long userId, String address, String paymentMethod) throws Exception {
         User user = userRepo.findById(userId).orElseThrow(() -> new Exception("User not found"));
 
         Cart cart = cartRepo.findByUserId(user.getId());
-//        Optional<User> userOpt = userRepo.findById(cid);
-//        User user = new User();
-//        if(!userOpt.isEmpty()){
-//            user = userOpt.get();
-//        }       
         Orders order = new Orders();
 
         order.setUser(user);
@@ -71,27 +67,47 @@ public class OrderService {
         order.setOrderStatus("Pending");
         order.setPaymentStatus("Pending");
         order.setLocation(address);
-//
         order.setPaymentMethod(paymentMethod);
+
         List<OrderItem> orderItems = new ArrayList<>();
+        List<Product> productsToUpdateStock = new ArrayList<>(); // Collect products to update stock
+
         for (CartItem cartItem : cart.getCartItems()) {
+            Product product = cartItem.getProduct();
+            int quantityInCart = cartItem.getQuantity();
+
+            if (product.getQuantity() < quantityInCart) {
+                throw new Exception("Product " + product.getName() + " is out of stock.");
+            }
+
             OrderItem orderItem = new OrderItem();
             orderItem.setProduct(cartItem.getProduct());
             orderItem.setQuantity(cartItem.getQuantity());
-            Product p = cartItem.getProduct();
-            p.setQuantity(p.getQuantity() - cartItem.getQuantity());
-            p.setNumberSell(p.getNumberSell() + cartItem.getQuantity());
-            productRepo.save(p);
-//			orderItem.setOrder(order);
             orderItems.add(orderItem);
+
+            // Collect products to update stock after order is placed
+            product.setQuantity(product.getQuantity() - quantityInCart);
+            product.setNumberSell(product.getNumberSell() + quantityInCart);
+            productsToUpdateStock.add(product);
+        }
+
+        // Save all the OrderItem items
+        for (OrderItem orderItem : orderItems) {
             orderItemRepo.save(orderItem);
         }
-        Discount dis ;
+
+        // Update stock for all products
+        for (Product product : productsToUpdateStock) {
+            productRepo.save(product);
+        }
+
+        Discount dis;
         dis = discountRepo.findById(1L);
         order.setDiscount(dis);
         order.setOrderItems(orderItems);
         order.setTotal_price(cart.getTotal_price());
         orderRepo.saveAndFlush(order);
+
         try {
             //xóa cart của customer sau khi order
             cartService.removeAllProduct(user.getId());

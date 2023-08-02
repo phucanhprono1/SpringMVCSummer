@@ -5,39 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a14e670-5131-4719-9d38-4723aa974b3c" name="Changes" comment="merge ducanh main">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/ProductHistoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/allProductHistory.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navbar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productHistory.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductHistoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/allProductHistory.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navbar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/productHistory.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductHistoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/controller/SupplierController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/ProductHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/model/ProductHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/repository/ProductHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/repository/ProductHistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/group1/springmvcsummer/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addCategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addSupplier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addSupplier.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteCategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteSupplier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/deleteSupplier.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editCategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editSupplier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editSupplier.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listCategories.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listCategories.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listProducts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listProducts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listSuppliers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listSuppliers.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/CategoryController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/ProductController.class" afterDir="false" />
@@ -45,27 +12,15 @@
       <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/ProductHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/ProductHistory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductHistoryService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/addCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/addCategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/addProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/addSupplier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/addSupplier.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/deleteCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/deleteCategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/deleteProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/deleteProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/deleteSupplier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/deleteSupplier.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/editCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/editCategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/editProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/editProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/editSupplier.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/editSupplier.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/listCategories.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/listCategories.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/listProducts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/listProducts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/listSuppliers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/listSuppliers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/SupplierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/SupplierController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/ProductHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/model/ProductHistory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductHistoryService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,12 +68,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging phucanh",
+    "git-widget-placeholder": "phucanh",
     "last_opened_file_path": "D:/SpringMVCSummer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "9a7dad69b633bf6ba02b3edc3d863fac",
     "vue.rearranger.settings.migration": "true"
   }
@@ -358,6 +314,7 @@
       <workItem from="1690165214700" duration="14000" />
       <workItem from="1690648794490" duration="181000" />
       <workItem from="1690676499572" duration="597000" />
+      <workItem from="1690946084562" duration="215000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

@@ -23,7 +23,31 @@
             }
 
             .actions {
-                margin-left: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center; /* Center the buttons horizontally */
+            }
+            .navbar-dark .navbar-brand {
+                color: #fff;
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                color: #fff;
+            }
+
+            .navbar-dark .navbar-nav .nav-link:hover {
+                color: #ddd;
+            }
+
+            /* Add a background color to the active link */
+            .navbar-dark .navbar-nav .nav-link.active {
+                color: #000;
+                background-color: #fff;
+            }
+
+            /* Customize the background color of the navigation bar */
+            .navbar-dark {
+                background-color: #000;
             }
         </style>
     </head>
@@ -46,14 +70,14 @@
                             <td>${item.product.name}</td>
                             <td class="cart-item">
                                 <div class="actions" style="display: flex; align-items: center;">
-                                    <form action="${pageContext.request.contextPath}/cart/increase/${item.product.id}" method="POST">
-                                        <input type="hidden" name="_method" value="POST">
-                                        <button id="btn-add" type="submit" class="btn btn-sm btn-primary">+</button>
-                                    </form>
-                                    <span class="quantity" style="margin: 0 auto; display: flex; align-items: center;">${item.quantity}</span>
                                     <form action="${pageContext.request.contextPath}/cart/decrease/${item.product.id}" method="POST">
                                         <input type="hidden" name="_method" value="POST">
-                                        <button id="btn-sub" type="submit" class="btn btn-sm btn-primary">-</button>
+                                        <button id="btn-add" type="submit" class="btn btn-sm btn-primary">-</button>
+                                    </form>
+                                    <span class="quantity" style="margin: 0 auto; display: flex; align-items: center;">${item.quantity}</span>
+                                    <form action="${pageContext.request.contextPath}/cart/increase/${item.product.id}" method="POST">
+                                        <input type="hidden" name="_method" value="POST">
+                                        <button id="btn-sub" type="submit" class="btn btn-sm btn-primary">+</button>
                                     </form>
                                 </div>
                             </td>

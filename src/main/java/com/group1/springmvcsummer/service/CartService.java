@@ -39,7 +39,7 @@ public class CartService {
     public Cart viewCartByUserId(Long userId)throws Exception{
         return cRepo.findByUserId(userId);
     }
-
+    @Transactional
     public Cart addProductToCart(Long customerId, Long productId, int quantity)
             throws Exception{
         Cart cart;

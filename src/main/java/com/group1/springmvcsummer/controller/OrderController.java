@@ -52,14 +52,16 @@ public class OrderController {
 
             return "redirect:/";
         }
-
+        String errorMessage = (String) session.getAttribute("errorMessage");
+        model.addAttribute("errorMessage", errorMessage);
+        session.removeAttribute("errorMessage");
         model.addAttribute("cart", cart);
 
         return "addOrder";
     }
 
     @PostMapping("/submitOrder")
-    public String submitOrder(HttpSession session, Model model, @RequestParam String address, @RequestParam String paymentMethod) throws Exception {
+    public String submitOrder(HttpSession session, Model model, @RequestParam String address, @RequestParam String paymentMethod) {
         User user = (User) session.getAttribute("user");
         if (user == null) {
             return "redirect:/login";
@@ -70,7 +72,8 @@ public class OrderController {
             orderService.addOrder(userId, address, paymentMethod);
             return "redirect:/";
         } catch (Exception e) {
-            return "redirect:/cart/view";
+            session.setAttribute("errorMessage", e.getMessage());
+            return "redirect:/order/orderForm";
         }
     }
 }

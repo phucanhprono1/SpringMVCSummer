@@ -14,6 +14,30 @@
         <title>Add Order</title>
         <!-- Include Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            .navbar-dark .navbar-brand {
+                color: #fff;
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                color: #fff;
+            }
+
+            .navbar-dark .navbar-nav .nav-link:hover {
+                color: #ddd;
+            }
+
+            /* Add a background color to the active link */
+            .navbar-dark .navbar-nav .nav-link.active {
+                color: #000;
+                background-color: #fff;
+            }
+
+            /* Customize the background color of the navigation bar */
+            .navbar-dark {
+                background-color: #000;
+            }
+        </style>
     </head>
     <body>
         <jsp:include page="navBarUser.jsp"/>
@@ -55,6 +79,12 @@
 
                 <button type="submit" class="btn btn-success">Place Order</button>
             </form>
+            <!-- Display error message if any -->
+            <c:if test="${not empty errorMessage}">
+                <div class="alert alert-danger mt-4">
+                    ${errorMessage}
+                </div>
+            </c:if>
         </div>
 
         <!-- Include Bootstrap JS -->

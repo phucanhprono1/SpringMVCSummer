@@ -11,8 +11,10 @@ import com.fasterxml.jackson.databind.type.TypeFactory;
 import com.group1.springmvcsummer.model.Category;
 import com.group1.springmvcsummer.model.Comment;
 import com.group1.springmvcsummer.model.Product;
+import com.group1.springmvcsummer.model.ProductHistory;
 import com.group1.springmvcsummer.model.Supplier;
 import com.group1.springmvcsummer.service.CategoryService;
+import com.group1.springmvcsummer.service.ProductHistoryService;
 import com.group1.springmvcsummer.service.ProductService;
 import com.group1.springmvcsummer.service.SupplierService;
 import java.util.ArrayList;
@@ -34,7 +36,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author ducan
  */
 @Controller
-@RequestMapping("/products")
+@RequestMapping("/admin-products")
 public class ProductController {
 
     @Autowired
@@ -43,8 +45,10 @@ public class ProductController {
     private CategoryService categoryService;
     @Autowired
     private SupplierService supplierService;
+    @Autowired
+    private ProductHistoryService productHistoryService;
 
-    @GetMapping("/list")
+    @GetMapping
     public String listProducts(Model model) {
         List<Product> products = productService.getAllProducts();
         model.addAttribute("products", products);
@@ -70,7 +74,7 @@ public class ProductController {
             BindingResult bindingResult) {
         productService.addProduct(product);
         productService.saveProductHistory(product, product.getQuantity());
-        return "redirect:/products/list";
+        return "redirect:/admin-products";
     }
 
     @PostMapping("/updateQuantity")
@@ -80,7 +84,7 @@ public class ProductController {
         existingProduct.setQuantity(existingProduct.getQuantity() + quantity);
         productService.updateProduct(existingProduct);
         productService.saveProductHistory(existingProduct, quantity);
-        return "redirect:/products/list";
+        return "redirect:/admin-products";
     }
 
     @PostMapping("/checkProduct")
@@ -115,7 +119,7 @@ public class ProductController {
     @PostMapping("/update")
     public String updateProduct(@ModelAttribute("product") Product product, BindingResult bindingResult) {
         productService.updateProduct(product);
-        return "redirect:/products/list";
+        return "redirect:/admin-products";
     }
 
     @GetMapping("/showDeleteForm")
@@ -128,7 +132,7 @@ public class ProductController {
     @PostMapping("/confirmDelete")
     public String deleteProduct(@RequestParam("id") Long productId) {
         productService.deleteProduct(productId);
-        return "redirect:/products/list";
+        return "redirect:/admin-products";
     }
 
     @GetMapping("/searchByName")
@@ -136,5 +140,23 @@ public class ProductController {
         List<Product> products = productService.searchProductsByName(name);
         model.addAttribute("products", products);
         return "listProducts";
+    }
+
+    @GetMapping("/viewAllProductHistory")
+    public String viewAllProductHistory(Model model) {
+        List<ProductHistory> allProductHistory = productHistoryService.getAllProductHistory();
+        model.addAttribute("allProductHistory", allProductHistory);
+        return "allProductHistory";
+    }
+
+    @GetMapping("/viewProductHistory")
+    public String viewProductHistory(@RequestParam("id") Long productId, Model model) {
+        Product product = productService.getProductById(productId);
+
+        List<ProductHistory> productHistory = productHistoryService.getProductHistory(productId);
+        model.addAttribute("productHistory", productHistory);
+        model.addAttribute("product", product);
+        return "productHistory";
+
     }
 }

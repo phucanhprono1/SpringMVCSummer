@@ -8,6 +8,7 @@ import com.group1.springmvcsummer.model.Product;
 import com.group1.springmvcsummer.model.ProductHistory;
 import com.group1.springmvcsummer.repository.ProductHistoryRepository;
 import com.group1.springmvcsummer.repository.ProductRepository;
+import java.util.Collections;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

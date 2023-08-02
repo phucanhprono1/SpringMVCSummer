@@ -29,6 +29,7 @@ com\group1\springmvcsummer\controller\HomeController.class
 com\group1\springmvcsummer\repository\OrderRepository.class
 com\group1\springmvcsummer\repository\SupplierRepository.class
 com\group1\springmvcsummer\model\Admin.class
+com\group1\springmvcsummer\service\ProductHistoryService.class
 com\group1\springmvcsummer\repository\CategoryRepository.class
 com\group1\springmvcsummer\controller\OrderController.class
 com\group1\springmvcsummer\model\Category.class

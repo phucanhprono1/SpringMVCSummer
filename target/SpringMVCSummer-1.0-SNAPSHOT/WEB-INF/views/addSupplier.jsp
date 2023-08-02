@@ -13,8 +13,9 @@
     <title>Add Supplier</title>
 </head>
 <body>
+    <jsp:include page="/WEB-INF/views/navbar.jsp" />
     <h1>Add Supplier</h1>
-    <form action="${pageContext.request.contextPath}/suppliers/add" method="post">
+    <form action="${pageContext.request.contextPath}/admin-suppliers/add" method="post">
         <label for="name">Name:</label>
         <input type="text" name="name" required>
         <br>
@@ -24,6 +25,6 @@
         <input type="submit" value="Add">
     </form>
     <br>
-    <a href="${pageContext.request.contextPath}/suppliers/list">Back to List</a>
+    <a href="${pageContext.request.contextPath}/admin-suppliers">Back to List</a>
 </body>
 </html>

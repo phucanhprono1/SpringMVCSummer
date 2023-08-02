@@ -12,8 +12,9 @@
     <title>Add Category</title>
 </head>
 <body>
+    <jsp:include page="/WEB-INF/views/navbar.jsp" />
     <h1>Add Category</h1>
-    <form action="${pageContext.request.contextPath}/categories/add" method="post">
+    <form action="${pageContext.request.contextPath}/admin-categories/add" method="post">
         <label for="name">Name:</label>
         <input type="text" name="name" required>
         <br>

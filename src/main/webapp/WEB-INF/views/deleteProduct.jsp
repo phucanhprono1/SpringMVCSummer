@@ -13,18 +13,19 @@
     <title>Delete Product</title>
 </head>
 <body>
+    <jsp:include page="/WEB-INF/views/navbar.jsp" />
     <h1>Delete Product</h1>
     <p>Are you sure you want to delete this product?</p>
     <p>ID: ${product.id}</p>
     <p>Name: ${product.name}</p>
     <p>Price: ${product.price}</p>
     <p>Quantity: ${product.quantity}</p>
-    <form action="${pageContext.request.contextPath}/products/confirmDelete" method="post">
+    <form action="${pageContext.request.contextPath}/admin-products/confirmDelete" method="post">
         <input type="hidden" name="id" value="${product.id}">
         <input type="submit" value="Delete">
     </form>
     <br>
-    <a href="${pageContext.request.contextPath}/products/list">Cancel</a>
+    <a href="${pageContext.request.contextPath}/admin-products">Cancel</a>
 </body>
 </html>
 

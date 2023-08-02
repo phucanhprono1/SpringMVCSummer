@@ -4,8 +4,9 @@
     Author     : ducan
 --%>
 
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html>
@@ -13,13 +14,14 @@
         <title>Categories List</title>
     </head>
     <body>
+        <jsp:include page="/WEB-INF/views/navbar.jsp" />
         <h1>Categories List</h1>
         <form action="${pageContext.request.contextPath}/categories/searchByName" method="get">
             <input type="text" name="name" placeholder="Enter category name">
             <input type="submit" value="Search">
         </form>
         <br>
-        <table>
+        <table class="table table-hover table-responsive-md">
             <tr>
                 <th>ID</th>
                 <th>Name</th>
@@ -32,12 +34,12 @@
                     <td>${category.id}</td>
                     <td>${category.name}</td>
                     <td>${category.description}</td>
-                    <td><a href="${pageContext.request.contextPath}/categories/showEditForm?id=${category.id}">Edit</a></td>
-                    <td><a href="${pageContext.request.contextPath}/categories/showDeleteForm?id=${category.id}">Delete</a></td>
+                    <td><a href="${pageContext.request.contextPath}/admin-categories/showEditForm?id=${category.id}" class="btn btn-info">Edit</a></td>
+                    <td><a href="${pageContext.request.contextPath}/admin-categories/showDeleteForm?id=${category.id}" class=" btn btn-danger">Delete</a></td>
                 </tr>
             </c:forEach>
         </table>
         <br>
-        <a href="${pageContext.request.contextPath}/categories/showAddForm">Add Category</a>
+        <a href="${pageContext.request.contextPath}/admin-categories/showAddForm" class="btn btn-outline-primary">Add Category</a>
     </body>
 </html>

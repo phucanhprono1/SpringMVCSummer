@@ -9,21 +9,24 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Edit Category</title>
-</head>
-<body>
-    <h1>Edit Category</h1>
-    <form action="${pageContext.request.contextPath}/categories/update" method="post">
-        <input type="hidden" name="id" value="${category.id}">
-        <label for="name">Name:</label>
-        <input type="text" name="name" value="${category.name}" required>
+    <head>
+        <title>Edit Category</title>
+    </head>
+    <body>
+        <jsp:include page="/WEB-INF/views/navbar.jsp" />
+        <h1>Edit Category</h1>
+        <form action="${pageContext.request.contextPath}/admin-categories/update" method="post">
+            <input type="hidden" name="id" value="${category.id}">
+            <label for="name">Name:</label>
+            <input type="text" name="name" value="${category.name}" required>
+            <br>
+            <label for="description">Description:</label>
+            <input type="text" name="description" value="${category.description}">
+            <br>
+            <input type="submit" value="Save">
+        </form>
         <br>
-        <label for="description">Description:</label>
-        <input type="text" name="description" value="${category.description}">
-        <br>
-        <input type="submit" value="Save">
-    </form>
-</body>
+        <a href="${pageContext.request.contextPath}/admin-categories">Back to List</a>
+    </body>
 </html>
 

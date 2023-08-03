@@ -5,7 +5,6 @@
 package com.group1.springmvcsummer.controller;
 
 import com.group1.springmvcsummer.model.Admin;
-import com.group1.springmvcsummer.model.User;
 import com.group1.springmvcsummer.repository.AdminRepository;
 import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,16 +28,27 @@ public class AdminController {
     }
     
     @PostMapping("/admin-login")
-    public String processLogin(String username, String password, HttpSession session, Model model) {
-        Admin admin = adminRepository.findByUsername(username);
+    public String processLogin(String name, String password, HttpSession session, Model model) {
+        Admin admin = adminRepository.findByUsername(name);
         if (admin != null && admin.getPassword().equals(password)) {
             // Đăng nhập thành công, lưu thông tin vào session
             session.setAttribute("admin", admin);
-            model.addAttribute("username", username);
-            return "redirect:/";
+            model.addAttribute("admin", admin);
+            model.addAttribute("name", name);
+            return "redirect:/admin";
         } else {
             model.addAttribute("error", "Invalid username or password");
-            return "redirect:/admin";
+            return "redirect:/admin-login";
         }
+    }
+    @GetMapping("/admin-logout")
+    public String logout(HttpSession session) {
+        // Invalidate the session to log the user out
+        session.invalidate();
+        return "redirect:/admin-login"; // Redirect to the login page after logout
+    }
+    @GetMapping("/admin")
+    public String adminhome(Model model){
+        return "admin";
     }
 }

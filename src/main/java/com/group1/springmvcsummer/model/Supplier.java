@@ -25,7 +25,7 @@ public class Supplier {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "address")
+    @Column(name = "address", columnDefinition = "nvarchar(255)")
     private String address;
 
 //    @OneToMany(cascade = CascadeType.ALL)

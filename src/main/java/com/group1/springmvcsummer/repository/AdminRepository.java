@@ -6,6 +6,8 @@ package com.group1.springmvcsummer.repository;
 
 import com.group1.springmvcsummer.model.Admin;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -16,7 +18,7 @@ import org.springframework.stereotype.Repository;
 public interface AdminRepository extends JpaRepository<Admin, Long>{
 
     public Admin findById(Long adminId);
-
-    public Admin findByUsername(String username);
+    @Query("SELECT a from Admin a where a.name =:name")
+    public Admin findByUsername(@Param("name")String name);
     
 }

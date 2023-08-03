@@ -11,6 +11,7 @@
 <html>
     <head>
         <title>Add Product</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -76,7 +77,7 @@
             <h1>Add Product</h1>
         </div>
         <div style="margin: 0 auto; max-width: 600px;">
-            <form action="${pageContext.request.contextPath}/admin-products/checkProduct" method="post">
+            <form action="${pageContext.request.contextPath}/admin-products/checkProduct" method="post" >
                 <label for="name">Product Name:</label>
                 <input type="text" name="name" required>
                 <br>
@@ -99,7 +100,7 @@
 
             <c:if test="${existingProduct eq null}">
                 <h2>Product does not exist. Add new product:</h2>
-                <form action="${pageContext.request.contextPath}/admin-products/addNew" method="post">
+                <form action="${pageContext.request.contextPath}/admin-products/addNew" method="post" accept-charset="UTF-8">
                     <label for="name">Product Name:</label>
                     <input type="text" name="name" value="${param.name}" required readonly>
                     <br>

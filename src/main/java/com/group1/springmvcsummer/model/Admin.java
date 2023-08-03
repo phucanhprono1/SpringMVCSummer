@@ -4,6 +4,7 @@
  */
 package com.group1.springmvcsummer.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -29,8 +30,11 @@ public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @Column(columnDefinition = "nvarchar(255)")
     private String name;
+    @Column(unique = true, columnDefinition = "nvarchar(255)")
     private String email;
+    @Column(columnDefinition = "nvarchar(50)")
     private String password;
 
 }

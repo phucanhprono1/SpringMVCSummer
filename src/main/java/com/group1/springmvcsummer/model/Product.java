@@ -25,14 +25,27 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true)
     private Long id;
-    @Column(unique = true)
+    @Column(unique = true, columnDefinition = "nvarchar(255)")
+    
     private String name;
     private float price;
+    
+    @Column(columnDefinition = "nvarchar(255)") // Adjust the length as needed
     private String color;
+
+    @Column(columnDefinition = "nvarchar(max)") // Adjust the length as needed
     private String description;
+
+    @Column(columnDefinition = "nvarchar(max)") // Adjust the length as needed
     private String image;
+
+    @Column(columnDefinition = "nvarchar(50)") // Adjust the length as needed
     private String size;
+
+    @Column(columnDefinition = "nvarchar(10)") // Adjust the length as needed
     private String gender;
+
+    @Column(columnDefinition = "nvarchar(255)") // Adjust the length as needed
     private String brand;
     private int quantity;
     private int numberSell;

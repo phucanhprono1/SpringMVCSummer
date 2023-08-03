@@ -29,6 +29,7 @@ public class Comment {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
     private User user;
+    @Column(columnDefinition = "nvarchar(max)")
     private String content;
     @Column(name = "rating")
     private int rating;

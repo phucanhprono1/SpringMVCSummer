@@ -30,7 +30,8 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true)
     private Long id;
-    @Column(unique = true)
+    @Column(unique = true, columnDefinition = "nvarchar(255)")
     private String name;
+    @Column(columnDefinition = "nvarchar(max)")
     private String description;
 }

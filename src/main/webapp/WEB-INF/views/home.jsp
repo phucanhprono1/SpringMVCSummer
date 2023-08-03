@@ -45,6 +45,19 @@
     .navbar-dark {
         background-color: #000;
     }
+
+    /* Add custom styles for the category buttons */
+    .category-btn {
+        flex: 0 0 120px; /* Set the width of each category button */
+        margin-right: 15px; /* Add spacing between category buttons */
+        border-radius: 4px; /* Add border radius to all four corners */
+    }
+
+    /* Scrollbar style for the categories container */
+    .category-scroll-container {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 </style>
 
 <!DOCTYPE html>
@@ -58,49 +71,53 @@
         <jsp:include page="navBarUser.jsp"/>
         <!-- Display all categories as buttons -->
         <h2>Categories:</h2>
-        <div class="btn-group" role="group" aria-label="Categories">
+        <div class="category-scroll-container btn-group" role="group" aria-label="Categories">
             <c:forEach items="${categories}" var="category">
-                <a href="${pageContext.request.contextPath}/products?cid=${category.id}" class="btn btn-secondary ${category.id == selectedCategoryId ? 'active' : ''}">${category.name}</a>
+                <a href="${pageContext.request.contextPath}/products?cid=${category.id}" class="btn btn-secondary category-btn ${category.id == selectedCategoryId ? 'active' : ''}">${category.name}</a>
             </c:forEach>
         </div>
-        <c:choose>
 
+        <c:choose>
             <c:when test="${not empty selectedCategoryName}">
                 <h2>Category: ${selectedCategoryName}</h2>
-                <div class="row">
-                    <c:forEach items="${prodByCate}" var="product">
-                        <!-- Your product card HTML here -->
-                        <div class="col-md-2 mb-2">
-                            <div class="card product-card">
-                                <img src="${product.image}" class="card-img-top" alt="${product.name}">
-                                <div class="card-body">
-                                    <h5 class="card-title">${product.name}</h5>
-                                    <p class="card-text">Price: ${product.price}</p>
-                                    <!-- Add more product information here if needed -->
-                                    <a href="/product/${product.id}" class="btn btn-primary">View Details</a>
+                <div class="container">
+                    <div class="row"> <!-- Center the products -->
+                        <c:forEach items="${prodByCate}" var="product">
+                            <!-- Your product card HTML here -->
+                            <div class="col-md-3 mb-2"> <!-- Each product card takes 3 columns in a medium-sized screen -->
+                                <div class="card product-card">
+                                    <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${product.name}</h5>
+                                        <p class="card-text">Price: ${product.price}</p>
+                                        <!-- Add more product information here if needed -->
+                                        <a href="${pageContext.request.contextPath}/product/${product.id}" class="btn btn-primary">View Details</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </c:forEach>
+                        </c:forEach>
+                    </div>
                 </div>
             </c:when>
             <c:otherwise>
                 <!-- Show all products -->
-                <div class="row">
-                    <c:forEach items="${allproducts}" var="product">
-                        <!-- Your product card HTML here -->
-                        <div class="col-md-2 mb-2">
-                            <div class="card product-card">
-                                <img src="${product.image}" class="card-img-top" alt="${product.name}">
-                                <div class="card-body">
-                                    <h5 class="card-title">${product.name}</h5>
-                                    <p class="card-text">Price: ${product.price}</p>
-                                    <!-- Add more product information here if needed -->
-                                    <a href="${pageContext.request.contextPath}/product/${product.id}" class="btn btn-primary">View Details</a>
+                <div class="container">
+                    <div class="row"> <!-- Center the products -->
+                        <c:forEach items="${allproducts}" var="product">
+                            <!-- Your product card HTML here -->
+                            <div class="col-md-3 mb-2"> <!-- Each product card takes 3 columns in a medium-sized screen -->
+                                <div class="card product-card">
+                                    <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${product.name}</h5>
+                                        <p class="card-text">Price: ${product.price}</p>
+                                        <!-- Add more product information here if needed -->
+                                        <a href="${pageContext.request.contextPath}/product/${product.id}" class="btn btn-primary">View Details</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </c:forEach>
+                        </c:forEach>
+                    </div>
                 </div>
             </c:otherwise>
         </c:choose>

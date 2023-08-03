@@ -5,15 +5,21 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Change bg-light to bg-dark -->
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Use the latest version of Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="/">Fashion Shop</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="${pageContext.request.contextPath}/">Home</a>
                 </li>
@@ -28,10 +34,9 @@
                 </li>
             </ul>
 
-            <ul class="navbar-nav ml-auto"> <!-- Align the links to the right -->
+            <ul class="navbar-nav ml-auto">
                 <c:choose>
                     <c:when test="${empty user}">
-                        <!-- Show login and register links if the user is not logged in -->
                         <li class="nav-item">
                             <a class="nav-link" href="${pageContext.request.contextPath}/login">Login</a>
                         </li>
@@ -40,7 +45,6 @@
                         </li>
                     </c:when>
                     <c:otherwise>
-                        <!-- Show user name and logout link if the user is logged in -->
                         <li class="nav-item">
                             <a class="nav-link">Welcome, ${user.username}</a>
                         </li>
@@ -53,3 +57,5 @@
         </div>
     </div>
 </nav>
+</html>
+

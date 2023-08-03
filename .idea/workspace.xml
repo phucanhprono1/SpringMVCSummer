@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a14e670-5131-4719-9d38-4723aa974b3c" name="Changes" comment="merge ducanh main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navBarUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navBarUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navbar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/SupplierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/controller/SupplierController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/ProductHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/model/ProductHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductHistoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/classes/com/group1/springmvcsummer/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/repository/ProductHistoryRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductHistoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/group1/springmvcsummer/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navBarUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navBarUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navbar.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,23 +54,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "phucanh",
-    "last_opened_file_path": "D:/SpringMVCSummer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "9a7dad69b633bf6ba02b3edc3d863fac",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;phucanh&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/SpringMVCSummer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9a7dad69b633bf6ba02b3edc3d863fac&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.91">
     <configuration default="true" type="aws.lambda" factoryName="Local">
       <option name="credentialProviderId" />
@@ -315,6 +307,7 @@
       <workItem from="1690648794490" duration="181000" />
       <workItem from="1690676499572" duration="597000" />
       <workItem from="1690946084562" duration="215000" />
+      <workItem from="1690994213788" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

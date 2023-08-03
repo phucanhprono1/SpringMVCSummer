@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a14e670-5131-4719-9d38-4723aa974b3c" name="Changes" comment="merge ducanh main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navBarUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navBarUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navBarUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navBarUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCSummer-1.0-SNAPSHOT/WEB-INF/views/navbar.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,6 +301,7 @@
       <workItem from="1690676499572" duration="597000" />
       <workItem from="1690946084562" duration="215000" />
       <workItem from="1690994213788" duration="609000" />
+      <workItem from="1691027777624" duration="1132000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />

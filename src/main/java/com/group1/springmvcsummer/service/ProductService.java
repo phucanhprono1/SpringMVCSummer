@@ -77,4 +77,7 @@ public class ProductService {
     public Product getProductByName(String name) {
         return productRepository.findByName(name);
     }
+    public List<Product> getProductByCategoryId(Long id){
+        return productRepository.findAllByCategoryId(id);
+    }
 }

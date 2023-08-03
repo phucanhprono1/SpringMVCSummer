@@ -1,4 +1,5 @@
 com\group1\springmvcsummer\controller\CategoryController.class
+com\group1\springmvcsummer\controller\LoginController.class
 com\group1\springmvcsummer\model\Post.class
 com\group1\springmvcsummer\model\ProductHistory.class
 com\group1\springmvcsummer\service\DiscountService.class
@@ -22,13 +23,17 @@ com\group1\springmvcsummer\repository\DiscountRepository.class
 com\group1\springmvcsummer\service\AdminService.class
 com\group1\springmvcsummer\service\SupplierService.class
 com\group1\springmvcsummer\model\Supplier.class
+com\group1\springmvcsummer\service\OrderService.class
 com\group1\springmvcsummer\model\CartItem.class
 com\group1\springmvcsummer\controller\HomeController.class
+com\group1\springmvcsummer\repository\OrderRepository.class
 com\group1\springmvcsummer\repository\SupplierRepository.class
 com\group1\springmvcsummer\model\Admin.class
 com\group1\springmvcsummer\service\ProductHistoryService.class
 com\group1\springmvcsummer\repository\CategoryRepository.class
+com\group1\springmvcsummer\controller\OrderController.class
 com\group1\springmvcsummer\model\Category.class
+com\group1\springmvcsummer\repository\OrderItemRepository.class
 com\group1\springmvcsummer\model\Orders.class
 com\group1\springmvcsummer\repository\CartRepository.class
 com\group1\springmvcsummer\controller\ProductController.class

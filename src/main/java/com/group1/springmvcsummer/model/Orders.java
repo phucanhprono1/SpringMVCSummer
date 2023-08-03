@@ -42,15 +42,18 @@ public class Orders {
     private Long id;
 
     private LocalDateTime date;
+    @Column(columnDefinition = "nvarchar(255)")
     private String orderStatus;
+    @Column(columnDefinition = "nvarchar(max)")
     private String location;
     @Column(name = "total_price")
     private float total_price;
 
     @OneToOne
     private Discount discount;
-
+    @Column(columnDefinition = "nvarchar(255)")
     private String paymentMethod;
+    @Column(columnDefinition = "nvarchar(255)")
     private String paymentStatus;
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})

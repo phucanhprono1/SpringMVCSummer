@@ -21,6 +21,10 @@
                     <input type="text" name="email" id="email" class="form-control" required>
                 </div>
                 <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
                     <label for="username" class="form-label">Username:</label>
                     <input type="text" name="username" id="username" class="form-control" required>
                 </div>

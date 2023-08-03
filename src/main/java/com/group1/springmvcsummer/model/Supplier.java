@@ -22,10 +22,10 @@ public class Supplier {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name",columnDefinition = "nvarchar(255)")
     private String name;
 
-    @Column(name = "address")
+    @Column(name = "address",columnDefinition = "nvarchar(255)")
     private String address;
 
 //    @OneToMany(cascade = CascadeType.ALL)

@@ -16,6 +16,6 @@
     <body>
         
         <jsp:include page="/WEB-INF/views/navbar.jsp" />
-        <h1>Welcome Admin</h1>
+        <h1>Welcome ${admin.name}</h1>
     </body>
 </html>

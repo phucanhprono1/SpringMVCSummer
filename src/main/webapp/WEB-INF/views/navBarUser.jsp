@@ -31,7 +31,7 @@
             <ul class="navbar-nav ml-auto"> <!-- Align the links to the right -->
                 <c:choose>
                     <c:when test="${empty user}">
-                        <!-- Show login and register links if the user is not logged in -->
+
                         <li class="nav-item">
                             <a class="nav-link" href="${pageContext.request.contextPath}/login">Login</a>
                         </li>
@@ -40,7 +40,7 @@
                         </li>
                     </c:when>
                     <c:otherwise>
-                        <!-- Show user name and logout link if the user is logged in -->
+
                         <li class="nav-item">
                             <a class="nav-link">Welcome, ${user.username}</a>
                         </li>

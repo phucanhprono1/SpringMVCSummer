@@ -26,8 +26,6 @@
                 <input type="hidden" name="id" value="${supplier.id}">
                 <button type="submit" class="btn btn-danger">Delete</button>
             </form>
-
-            <!-- Liên kết "Cancel" -->
             <a href="${pageContext.request.contextPath}/admin-suppliers" class="btn btn-secondary mt-3">Cancel</a>
         </div>
     </body>

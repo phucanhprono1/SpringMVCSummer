@@ -17,6 +17,6 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface OrderRepository extends JpaRepository<Orders,Long> {
-    @Query("SELECT o FROM Orders o where o.user.id =:uid" )
+    @Query("SELECT o FROM Orders o where o.user.id =:uid order by o.id desc" )
     public List<Orders> viewAllOrdersByUserId(@Param("uid")Long uid);
 }

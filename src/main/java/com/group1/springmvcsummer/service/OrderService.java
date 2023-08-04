@@ -86,7 +86,7 @@ public class OrderService {
             orderItem.setPrice(cartItem.getQuantity()*cartItem.getProduct().getPrice());
             orderItems.add(orderItem);
 
-            // Collect products to update stock after order is placed
+           
             product.setQuantity(product.getQuantity() - quantityInCart);
             product.setNumberSell(product.getNumberSell() + quantityInCart);
             productsToUpdateStock.add(product);

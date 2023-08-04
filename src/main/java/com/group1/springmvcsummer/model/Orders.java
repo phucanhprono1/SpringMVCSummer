@@ -62,7 +62,5 @@ public class Orders {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<OrderItem> orderItems = new ArrayList<>();
-
-  
-
+ 
 }

@@ -88,7 +88,7 @@
                 <h2>Product already exists with the name: ${existingProduct.name}</h2>
                 <h3>Current Quantity: ${existingProduct.quantity}</h3>
                 <h3>Enter additional quantity to update:</h3>
-                <form action="${pageContext.request.contextPath}/products/updateQuantity" method="post">
+                <form action="${pageContext.request.contextPath}/admin-products/updateQuantity" method="post">
                     <input type="hidden" name="id" value="${existingProduct.id}">
                     <input type="hidden" name="oldQuantity" value="${existingProduct.quantity}">
                     <label for="quantity">Additional Quantity:</label>

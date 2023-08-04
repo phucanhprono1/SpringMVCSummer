@@ -21,7 +21,6 @@
             <p>Name: ${supplier.name}</p>
             <p>Address: ${supplier.address}</p>
 
-            <!-- Form xác nhận xóa nhà cung cấp -->
             <form class="mt-3" action="${pageContext.request.contextPath}/admin-suppliers/confirmDelete" method="post">
                 <input type="hidden" name="id" value="${supplier.id}">
                 <button type="submit" class="btn btn-danger">Delete</button>

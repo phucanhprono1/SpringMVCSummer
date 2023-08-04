@@ -36,6 +36,7 @@ public class OrderItem {
 
     private Integer quantity;
 
+    private double price;
     @ManyToOne
     private Orders orders;
 }

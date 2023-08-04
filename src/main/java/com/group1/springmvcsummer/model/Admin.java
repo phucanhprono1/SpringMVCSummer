@@ -34,7 +34,7 @@ public class Admin {
     private String name;
     @Column(unique = true, columnDefinition = "nvarchar(255)")
     private String email;
-    @Column(columnDefinition = "nvarchar(50)")
+    @Column(columnDefinition = "varchar(50)")
     private String password;
 
 }

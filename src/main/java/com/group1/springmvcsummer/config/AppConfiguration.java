@@ -19,6 +19,7 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
@@ -48,7 +49,7 @@ public class AppConfiguration implements ApplicationContextAware {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        dataSource.setUrl("jdbc:sqlserver://localhost:1433;databaseName=mydb");
+        dataSource.setUrl("jdbc:sqlserver://localhost:1433;databaseName=mydb;useUnicode=true;characterEncoding=UTF-8");
         dataSource.setUsername("sa");
         dataSource.setPassword("sa");
         return dataSource;
@@ -67,6 +68,7 @@ public class AppConfiguration implements ApplicationContextAware {
         Properties properties = new Properties();
         properties.put("hibernate.dialect", "org.hibernate.dialect.SQLServerDialect");
         properties.put("hibernate.hbm2ddl.auto", "update"); // This property triggers schema creation
+        properties.put("hibernate.connection.charSet", "UTF-8");
         entityManagerFactoryBean.setJpaProperties(properties);
 
         return entityManagerFactoryBean;
@@ -79,4 +81,5 @@ public class AppConfiguration implements ApplicationContextAware {
         transactionManager.setEntityManagerFactory(entityManagerFactory);
         return transactionManager;
     }
+    
 }

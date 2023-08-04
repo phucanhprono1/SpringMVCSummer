@@ -83,6 +83,6 @@ public class LoginController {
     public String logout(HttpSession session) {
         // Invalidate the session to log the user out
         session.invalidate();
-        return "redirect:/"; // Redirect to the login page after logout
+        return "redirect:/"; // Redirect to the home page after logout
     }
 }

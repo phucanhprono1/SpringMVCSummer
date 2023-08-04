@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/order")
 public class OrderController {
 
-    // ... existing code ..
+   
     private final OrderService orderService;
     private final CartService cartService;
     private final CartRepository cartRepository;
@@ -75,5 +75,22 @@ public class OrderController {
             session.setAttribute("errorMessage", e.getMessage());
             return "redirect:/order/orderForm";
         }
-    }    
+    }
+    @GetMapping("/orderHistory")
+    public String orderHistory(HttpSession session,Model model){
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            return "redirect:/login";
+        }
+        Long userId = user.getId();
+        model.addAttribute("user", user);
+        try{
+            model.addAttribute("orderhistory",orderService.getAllOrdersByUserId(userId));
+            
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+        return "orderHistory";
+    }
 }

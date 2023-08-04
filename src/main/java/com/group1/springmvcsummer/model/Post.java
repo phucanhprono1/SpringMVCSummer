@@ -28,11 +28,10 @@ public class Post {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "admin_id")
     private Admin admin;
-    @Column(name = "content")
+    @Column(name = "content",columnDefinition = "nvarchar(255)")
     private String content;
     @Column(name = "image_url")
     private String imageUrl;
-
     @Column(name = "post_date")
     private LocalDateTime postDate;
 

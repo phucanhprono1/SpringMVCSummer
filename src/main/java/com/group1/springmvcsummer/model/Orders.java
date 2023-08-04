@@ -10,6 +10,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -42,23 +43,24 @@ public class Orders {
     private Long id;
 
     private LocalDateTime date;
+    @Column(columnDefinition = "nvarchar(255)")
     private String orderStatus;
+    @Column(columnDefinition = "nvarchar(max)")
     private String location;
     @Column(name = "total_price")
     private float total_price;
 
     @OneToOne
     private Discount discount;
-
+    @Column(columnDefinition = "nvarchar(255)")
     private String paymentMethod;
+    @Column(columnDefinition = "nvarchar(255)")
     private String paymentStatus;
 
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private User user;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<OrderItem> orderItems = new ArrayList<>();
-
-  
-
+ 
 }

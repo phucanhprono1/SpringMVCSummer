@@ -29,7 +29,11 @@
                             <p class="card-text">Price: ${product.price}</p>
                             <p class="card-text">Color: ${product.color}</p>
                             <p class="card-text">Description: ${product.description}</p>
-                            <!-- Add more product information here if needed -->
+                            <p class="card-text">Size: ${product.size}</p>
+                            <p class="card-text">Gender: ${product.gender}</p>
+                            <p class="card-text">Brand: ${product.brand}</p>
+                            <p class="card-text">Quantity: ${product.quantity}</p>
+                            <p class="card-text">Number Sell: ${product.numberSell}</p>
 
                             <!-- Add to Cart button -->
                             <form action="${pageContext.request.contextPath}/cart/add/${product.id}" method="POST">

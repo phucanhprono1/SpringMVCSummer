@@ -15,7 +15,7 @@
 <body>
     <jsp:include page="/WEB-INF/views/navbar.jsp" />
     <h1>Suppliers List</h1>
-    <form action="${pageContext.request.contextPath}/suppliers/searchByName" method="get">
+    <form action="${pageContext.request.contextPath}/admin-suppliers/searchByName" method="get">
         <input type="text" name="name" placeholder="Enter supplier name">
         <input type="submit" value="Search">
     </form>

@@ -16,7 +16,7 @@
     <body>
         <jsp:include page="/WEB-INF/views/navbar.jsp" />
         <h1>Categories List</h1>
-        <form action="${pageContext.request.contextPath}/categories/searchByName" method="get">
+        <form action="${pageContext.request.contextPath}/admin-categories/searchByName" method="get">
             <input type="text" name="name" placeholder="Enter category name">
             <input type="submit" value="Search">
         </form>

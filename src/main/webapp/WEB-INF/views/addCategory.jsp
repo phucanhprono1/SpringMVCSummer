@@ -17,13 +17,10 @@
 
     <body>
         <jsp:include page="/WEB-INF/views/navbar.jsp" />
-        <!-- Thêm class "container" để giới hạn chiều rộng của nội dung -->
         <div class="container">
 
-            <!-- Tiêu đề trang -->
             <h1 class="mt-4 mb-4">Add Category</h1>
 
-            <!-- Form thêm danh mục -->
             <form class="mt-3" action="${pageContext.request.contextPath}/admin-categories/add" method="post">
                 <div class="form-group">
                     <label for="name">Name:</label>

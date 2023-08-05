@@ -33,8 +33,6 @@
                 <p>If you don't have an account, <a href="${pageContext.request.contextPath}/register">register here</a>.</p>
             </div>
         </div>
-
-        <!-- Include Bootstrap 5.3 JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

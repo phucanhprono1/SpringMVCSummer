@@ -53,7 +53,7 @@ public class Product {
     @JoinColumn(name = "product_id")
     private List<ProductHistory> productHistories;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "category_id")
     private Category category;
 
@@ -61,7 +61,7 @@ public class Product {
     @JoinColumn(name = "product_id")
     private List<Comment> listComment;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "supplier_id")
     private Supplier supplier;
 

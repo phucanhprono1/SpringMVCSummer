@@ -15,7 +15,7 @@
 <body>
     <jsp:include page="/WEB-INF/views/navbar.jsp" />
     <h1>Products List</h1>
-    <form action="${pageContext.request.contextPath}/products/searchByName" method="get">
+    <form action="${pageContext.request.contextPath}/admin-products/searchByName" method="get">
         <input type="text" name="name" placeholder="Enter product name">
         <input type="submit" value="Search">
     </form>

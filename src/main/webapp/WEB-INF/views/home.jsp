@@ -11,16 +11,16 @@
 
 <style>
     .product-card {
-        width: 200px; /* Adjust the width as needed */
-        margin: 10px; /* Add a small gap between products */
+        width: 200px; 
+        height: 200px;
+        margin: 10px; 
     }
 
     .product-card img {
         max-width: 100%;
-        height: auto;
+        height: 160px;
     }
 
-    /* Black Background with White Text */
     .navbar-dark .navbar-brand {
         color: #fff;
     }
@@ -33,22 +33,22 @@
         color: #ddd;
     }
 
-    /* Add a background color to the active link */
+
     .navbar-dark .navbar-nav .nav-link.active {
         color: #000;
         background-color: #fff;
     }
 
-    /* Customize the background color of the navigation bar */
+
     .navbar-dark {
         background-color: #000;
     }
 
-    /* Add custom styles for the category buttons */
+
     .category-btn {
-        flex: 0 0 120px; /* Set the width of each category button */
-        margin-right: 15px; /* Add spacing between category buttons */
-        border-radius: 4px; /* Add border radius to all four corners */
+        flex: 0 0 120px; 
+        margin-right: 15px; 
+        border-radius: 4px; 
     }
 
     /* Scrollbar style for the categories container */
@@ -67,7 +67,7 @@
     </head>
     <body>
         <jsp:include page="navBarUser.jsp"/>
-        <!-- Display all categories as buttons -->
+
         <h2>Categories:</h2>
         <div class="category-scroll-container btn-group" role="group" aria-label="Categories">
             <c:forEach items="${categories}" var="category">
